@@ -1,0 +1,1029 @@
+INFO  [] - Loading configuration property: $internal.pipeline.job-id, 5ca8a57e148a65e39fbd9ce1043419d2
+INFO  [] - Loading configuration property: execution.checkpointing.externalized-checkpoint-retention, RETAIN_ON_CANCELLATION
+INFO  [] - Loading configuration property: pipeline.jars, local:///opt/flink/opt/flink-python_2.12-1.15.0.jar
+INFO  [] - Loading configuration property: kubernetes.jobmanager.cpu, 1.0
+INFO  [] - Loading configuration property: $internal.flink.version, v1_16
+INFO  [] - The derived from fraction jvm overhead memory (1.023gb (1098907664 bytes)) is greater than its max value 1024.000mb (1073741824 bytes), max value will be used instead
+INFO  [] - Final Master Memory configuration:
+INFO  [] -   Total Process Memory: 10.234gb (10989076480 bytes)
+INFO  [] -     Total Flink Memory: 8.984gb (9646899200 bytes)
+INFO  [] -       JVM Heap:         8.859gb (9512681472 bytes)
+INFO  [] -       Off-heap:         128.000mb (134217728 bytes)
+INFO  [] -     JVM Metaspace:      256.000mb (268435456 bytes)
+INFO  [] -     JVM Overhead:       1024.000mb (1073741824 bytes)
+, GOSU_VERSION=1.11, NGINX_M_PORT_81_TCP_ADDR=10.68.27.199, LD_PRELOAD=:/usr/lib/x86_64-linux-gnu/libjemalloc.so, PYFLINK_FLINK_DOME_REST_SERVICE_PORT=8081, CLZG_SERVICE_PORT_8080_TCP_ADDR=10.68.114.148, NGINX_PC_SERVICE_HOST=10.68.193.185, FLINK_OPERATOR_WEBHOOK_SERVICE_PORT=tcp://10.68.188.248:443, FLINK_PLUGINS_DIR=/opt/flink/plugins, PYFLINK_CBL_REST_SERVICE_HOST=10.68.41.122, GPG_KEY=CBE82BEFD827B08AFA843977EDBF922A7BC84897, KGOA_ADMIN_SERVICE_PORT_8002_TCP_ADDR=10.68.68.221, PYFLINK_CBL_REST_PORT_8081_TCP_PORT=8081, CLZG_SERVICE_SERVICE_HOST=10.68.114.148, PYFLINK_FLINK_DOME_REST_PORT_8081_TCP_ADDR=10.68.120.119, PYFLINK_FLINK_DOME_REST_SERVICE_HOST=10.68.120.119, KUBERNETES_PORT_443_TCP=tcp://10.68.0.1:443, PYTHONPATH=/tmp/pyflink/d00b9e06-64dd-43e2-b0a6-c196a0be3d0d/c062b4a1-0ba8-433e-8c7f-3f6a94357fc3:/opt/flink/opt/python/py4j-0.10.9.3-src.zip:/opt/flink/opt/python/pyflink.zip:/opt/flink/opt/python/cloudpickle-1.2.2-src.zip, CLZG_SERVICE_SERVICE_PORT_CLZG_SEARCH=8080, MAX_LOG_FILE_NUMBER=10, DYNAMIC_PARAMETERS=-D jobmanager.memory.off-heap.size=134217728b -D jobmanager.memory.jvm-overhead.min=1073741824b -D jobmanager.memory.jvm-metaspace.size=268435456b -D jobmanager.memory.heap.size=9512681472b -D jobmanager.memory.jvm-overhead.max=1073741824b, PYFLINK_FLINK_DOME_REST_PORT=tcp://10.68.120.119:8081, FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.15.0/flink-1.15.0-bin-scala_2.12.tgz, FLINK_OPERATOR_WEBHOOK_SERVICE_PORT_443_TCP_PORT=443, KGOA_ADMIN_SERVICE_SERVICE_HOST=10.68.68.221, CLZG_SERVICE_SERVICE_PORT=8080, PYFLINK_FLINK_DOME_REST_SERVICE_PORT_REST=8081, KUBERNETES_SERVICE_HOST=10.68.0.1, CLZG_SERVICE_PORT_8080_TCP=tcp://10.68.114.148:8080, LANG=C.UTF-8, KGOA_GATEWAY_SERVICE_SERVICE_PORT_KGOA_GATEWAY=8001, PYFLINK_CBL_REST_PORT_8081_TCP=tcp://10.68.41.122:8081, PYFLINK_CBL_REST_SERVICE_PORT=8081, KGOA_GATEWAY_SERVICE_PORT_8001_TCP_ADDR=10.68.114.10, CLZG_SERVICE_PORT_8080_TCP_PORT=8080, FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.15.0/flink-1
+.15.0-bin-scala_2.12.tgz.asc, KGOA_ADMIN_SERVICE_PORT_8002_TCP_PROTO=tcp, KGOA_ADMIN_SERVICE_SERVICE_PORT_KGOA_ADMIN=8002, CLZG_SERVICE_PORT_8080_TCP_PROTO=tcp, FLINK_OPT_DIR=/opt/flink/opt, FLINK_LIB_DIR=/opt/flink/lib, NGINX_M_SERVICE_PORT_HTTP=81, KGOA_ADMIN_SERVICE_PORT=tcp://10.68.68.221:8002, FLINK_OPERATOR_WEBHOOK_SERVICE_PORT_443_TCP=tcp://10.68.188.248:443, KUBERNETES_SERVICE_PORT=443, KGOA_ADMIN_SERVICE_SERVICE_PORT=8002, PYFLINK_FLINK_DOME_REST_PORT_8081_TCP_PORT=8081, NGINX_M_PORT_81_TCP_PROTO=tcp, NGINX_PC_PORT_80_TCP_PORT=80, HOSTNAME=pyflink-flink-dome-5b84c46cd5-dhmv7, JVM_ARGS= -Xmx9512681472 -Xms9512681472 -XX:MaxMetaspaceSize=268435456, KUBERNETES_PORT_443_TCP_PORT=443, KGOA_GATEWAY_SERVICE_PORT_8001_TCP=tcp://10.68.114.10:8001, HOME=/opt/flink, PYFLINK_CBL_REST_PORT_8081_TCP_ADDR=10.68.41.122}, command: /usr/local/bin/python3 -m python_demo --runner FlinkRunner
+2023-03-14 08:35:18,083 INFO  org.apache.flink.client.python.PythonDriver                  [] - --------------------------- Python Process Started --------------------------
+2023-03-14 08:35:18,683 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: blob.server.port, 6124
+2023-03-14 08:35:18,683 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: kubernetes.jobmanager.annotations, flinkdeployment.flink.apache.org/generation:163
+2023-03-14 08:35:18,684 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: kubernetes.jobmanager.replicas, 1
+2023-03-14 08:35:18,684 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: jobmanager.rpc.address, pyflink-flink-dome.default
+2023-03-14 08:35:18,684 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: kubernetes.taskmanager.cpu, 1.0
+2023-03-14 08:35:18,684 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: kubernetes.service-account, flink
+2023-03-14 08:35:18,684 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: kubernetes.cluster-id, pyflink-flink-dome
+2023-03-14 08:35:18,684 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: $internal.application.program-args, -pyclientexec;/usr/local/bin/python3;-py;/opt/flink/usrlib/python_demo.py;--runner;FlinkRunner
+2023-03-14 08:35:18,684 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: kubernetes.container.image, 192.168.70.8:880/pyflink/kmxxg_pyflink:4.8.4
+2023-03-14 08:35:18,685 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: parallelism.default, 1
+2023-03-14 08:35:18,685 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: kubernetes.namespace, default
+2023-03-14 08:35:18,685 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: taskmanager.numberOfTaskSlots, 3
+2023-03-14 08:35:18,685 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: kubernetes.rest-service.exposed.type, ClusterIP
+2023-03-14 08:35:18,685 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: kubernetes.jobmanager.owner.reference, kind:FlinkDeployment,apiVersion:flink.apache.org/v1beta1,blockOwnerDeletion:false,controller:false,name:pyflink-flink-dome,uid:ea53061a-268e-4413-9ced-097769217e24
+2023-03-14 08:35:18,685 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: $internal.application.main, org.apache.flink.client.python.PythonDriver
+2023-03-14 08:35:18,686 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: taskmanager.memory.process.size, 10480m
+2023-03-14 08:35:18,686 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: kubernetes.internal.jobmanager.entrypoint.class, org.apache.flink.kubernetes.entrypoint.KubernetesApplicationClusterEntrypoint
+2023-03-14 08:35:18,686 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: pipeline.name, pyflink-flink-dome
+2023-03-14 08:35:18,686 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: web.cancel.enable, false
+2023-03-14 08:35:18,686 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: execution.target, kubernetes-application
+2023-03-14 08:35:18,686 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: execution.shutdown-on-application-finish, false
+2023-03-14 08:35:18,687 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: jobmanager.memory.process.size, 10480m
+2023-03-14 08:35:18,760 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: taskmanager.rpc.port, 6122
+2023-03-14 08:35:18,761 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: kubernetes.container.image.pull-policy, Always
+2023-03-14 08:35:18,761 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: internal.cluster.execution-mode, NORMAL
+2023-03-14 08:35:18,761 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: $internal.pipeline.job-id, 5ca8a57e148a65e39fbd9ce1043419d2
+2023-03-14 08:35:18,761 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: execution.checkpointing.externalized-checkpoint-retention, RETAIN_ON_CANCELLATION
+2023-03-14 08:35:18,761 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: pipeline.jars, local:///opt/flink/opt/flink-python_2.12-1.15.0.jar
+2023-03-14 08:35:18,762 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: kubernetes.jobmanager.cpu, 1.0
+2023-03-14 08:35:18,762 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: $internal.flink.version, v1_16
+2023-03-14 08:35:18,767 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcService             [] - Starting RPC endpoint for org.apache.flink.runtime.resourcemanager.active.ActiveResourceManager at akka://flink/user/rpc/resourcemanager_1 .
+2023-03-14 08:35:18,780 INFO  org.apache.flink.runtime.resourcemanager.active.ActiveResourceManager [] - Starting the resource manager.
+2023-03-14 08:35:22,186 INFO  org.apache.flink.kubernetes.KubernetesResourceManagerDriver  [] - Recovered 0 pods from previous attempts, current attempt id is 1.
+2023-03-14 08:35:22,186 INFO  org.apache.flink.runtime.resourcemanager.active.ActiveResourceManager [] - Recovered 0 workers from previous attempt.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.flink.api.java.ClosureCleaner (file:/opt/flink/lib/flink-dist-1.15.0.jar) to field java.lang.String.value
+WARNING: Please consider reporting this to the maintainers of org.apache.flink.api.java.ClosureCleaner
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2023-03-14 08:35:29,765 WARN  org.apache.flink.connector.kafka.sink.KafkaSinkBuilder       [] - Property [transaction.timeout.ms] not specified. Setting it to PT1H
+2023-03-14 08:35:30,763 INFO  org.apache.flink.client.deployment.application.executors.EmbeddedExecutor [] - Job 5ca8a57e148a65e39fbd9ce1043419d2 is submitted.
+2023-03-14 08:35:30,763 INFO  org.apache.flink.client.deployment.application.executors.EmbeddedExecutor [] - Submitting Job with JobId=5ca8a57e148a65e39fbd9ce1043419d2.
+2023-03-14 08:35:31,409 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher     [] - Received JobGraph submission 'pyflink-flink-dome' (5ca8a57e148a65e39fbd9ce1043419d2).
+2023-03-14 08:35:31,410 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher     [] - Submitting job 'pyflink-flink-dome' (5ca8a57e148a65e39fbd9ce1043419d2).
+2023-03-14 08:35:31,479 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcService             [] - Starting RPC endpoint for org.apache.flink.runtime.jobmaster.JobMaster at akka://flink/user/rpc/jobmanager_2 .
+2023-03-14 08:35:31,490 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Initializing job 'pyflink-flink-dome' (5ca8a57e148a65e39fbd9ce1043419d2).
+2023-03-14 08:35:31,580 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Using restart back off time strategy NoRestartBackoffTimeStrategy for pyflink-flink-dome (5ca8a57e148a65e39fbd9ce1043419d2).
+2023-03-14 08:35:31,683 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Running initialization on master for job pyflink-flink-dome (5ca8a57e148a65e39fbd9ce1043419d2).
+2023-03-14 08:35:31,683 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Successfully ran initialization on master in 0 ms.
+2023-03-14 08:35:31,784 INFO  org.apache.flink.runtime.scheduler.adapter.DefaultExecutionTopology [] - Built 1 new pipelined regions in 3 ms, total 1 pipelined regions currently.
+2023-03-14 08:35:31,791 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - No state backend has been configured, using default (HashMap) org.apache.flink.runtime.state.hashmap.HashMapStateBackend@10633a51
+2023-03-14 08:35:31,792 INFO  org.apache.flink.runtime.state.StateBackendLoader            [] - State backend loader loads the state backend as HashMapStateBackend
+2023-03-14 08:35:31,793 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Checkpoint storage is set to 'jobmanager'
+2023-03-14 08:35:31,863 INFO  org.apache.flink.runtime.checkpoint.CheckpointCoordinator    [] - No checkpoint found during restore.
+2023-03-14 08:35:31,871 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Using failover strategy org.apache.flink.runtime.executiongraph.failover.flip1.RestartPipelinedRegionFailoverStrategy@47c32ebd for pyflink-flink-dome (5ca8a57e148a65e39fbd9ce1043419d2).
+2023-03-14 08:35:31,884 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Starting execution of job 'pyflink-flink-dome' (5ca8a57e148a65e39fbd9ce1043419d2) under job master id 00000000000000000000000000000000.
+2023-03-14 08:35:31,888 INFO  org.apache.flink.runtime.source.coordinator.SourceCoordinator [] - Starting split enumerator for source Source: source_kafka[1].
+2023-03-14 08:35:31,891 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Starting scheduling with scheduling strategy [org.apache.flink.runtime.scheduler.strategy.PipelinedRegionSchedulingStrategy]
+2023-03-14 08:35:31,891 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Job pyflink-flink-dome (5ca8a57e148a65e39fbd9ce1043419d2) switched from state CREATED to RUNNING.
+2023-03-14 08:35:31,896 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: source_kafka[1] -> PythonCalc[2] -> sink_table[3]: Writer -> sink_table[3]: Committer (1/1) (799d7b2beada01cd2ce5f925e9f8e384) switched from CREATED to SCHEDULED.
+2023-03-14 08:35:31,960 INFO  org.apache.flink.kafka.shaded.org.apache.kafka.clients.admin.AdminClientConfig [] - AdminClientConfig values: 
+        bootstrap.servers = [172.1.1.56:9092, 172.1.1.57:9092, 172.1.1.58:9092]
+        client.dns.lookup = use_all_dns_ips
+        client.id = test_k8s-enumerator-admin-client
+        connections.max.idle.ms = 300000
+        default.api.timeout.ms = 60000
+        metadata.max.age.ms = 300000
+        metric.reporters = []
+        metrics.num.samples = 2
+        metrics.recording.level = INFO
+        metrics.sample.window.ms = 30000
+        receive.buffer.bytes = 65536
+        reconnect.backoff.max.ms = 1000
+        reconnect.backoff.ms = 50
+        request.timeout.ms = 30000
+        retries = 2147483647
+        retry.backoff.ms = 100
+        sasl.client.callback.handler.class = null
+        sasl.jaas.config = null
+        sasl.kerberos.kinit.cmd = /usr/bin/kinit
+        sasl.kerberos.min.time.before.relogin = 60000
+        sasl.kerberos.service.name = null
+        sasl.kerberos.ticket.renew.jitter = 0.05
+        sasl.kerberos.ticket.renew.window.factor = 0.8
+        sasl.login.callback.handler.class = null
+        sasl.login.class = null
+        sasl.login.refresh.buffer.seconds = 300
+        sasl.login.refresh.min.period.seconds = 60
+        sasl.login.refresh.window.factor = 0.8
+        sasl.login.refresh.window.jitter = 0.05
+        sasl.mechanism = GSSAPI
+        security.protocol = PLAINTEXT
+        security.providers = null
+        send.buffer.bytes = 131072
+        socket.connection.setup.timeout.max.ms = 30000
+        socket.connection.setup.timeout.ms = 10000
+        ssl.cipher.suites = null
+        ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+        ssl.endpoint.identification.algorithm = https
+        ssl.engine.factory.class = null
+        ssl.key.password = null
+        ssl.keymanager.algorithm = SunX509
+        ssl.keystore.certificate.chain = null
+        ssl.keystore.key = null
+        ssl.keystore.location = null
+        ssl.keystore.password = null
+        ssl.keystore.type = JKS
+        ssl.protocol = TLSv1.3
+        ssl.provider = null
+        ssl.secure.random.implementation = null
+        ssl.trustmanager.algorithm = PKIX
+        ssl.truststore.certificates = null
+        ssl.truststore.location = null
+        ssl.truststore.password = null
+        ssl.truststore.type = JKS
+2023-03-14 08:35:31,966 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Connecting to ResourceManager akka.tcp://flink@pyflink-flink-dome.default:6123/user/rpc/resourcemanager_*(00000000000000000000000000000000)
+2023-03-14 08:35:31,976 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Resolved ResourceManager address, beginning registration
+2023-03-14 08:35:31,978 INFO  org.apache.flink.runtime.resourcemanager.active.ActiveResourceManager [] - Registering job manager 00000000000000000000000000000000@akka.tcp://flink@pyflink-flink-dome.default:6123/user/rpc/jobmanager_2 for job 5ca8a57e148a65e39fbd9ce1043419d2.
+2023-03-14 08:35:31,986 INFO  org.apache.flink.runtime.resourcemanager.active.ActiveResourceManager [] - Registered job manager 00000000000000000000000000000000@akka.tcp://flink@pyflink-flink-dome.default:6123/user/rpc/jobmanager_2 for job 5ca8a57e148a65e39fbd9ce1043419d2.
+2023-03-14 08:35:32,061 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - JobManager successfully registered at ResourceManager, leader id: 00000000000000000000000000000000.
+2023-03-14 08:35:32,063 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Received resource requirements from job 5ca8a57e148a65e39fbd9ce1043419d2: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=1}]
+2023-03-14 08:35:32,071 INFO  org.apache.flink.runtime.resourcemanager.active.ActiveResourceManager [] - Requesting new worker with resource spec WorkerResourceSpec {cpuCores=1.0, taskHeapSize=4.242gb (4555014073 bytes), taskOffHeapSize=0 bytes, networkMemSize=920.000mb (964689934 bytes), managedMemSize=3.594gb (3858759737 bytes), numSlots=3}, current pending count: 1.
+2023-03-14 08:35:32,080 INFO  org.apache.flink.runtime.externalresource.ExternalResourceUtils [] - Enabled external resources: []
+2023-03-14 08:35:32,162 INFO  org.apache.flink.configuration.Configuration                 [] - Config uses fallback configuration key 'kubernetes.service-account' instead of key 'kubernetes.taskmanager.service-account'
+2023-03-14 08:35:32,185 WARN  org.apache.flink.kafka.shaded.org.apache.kafka.clients.admin.AdminClientConfig [] - The configuration 'key.deserializer' was supplied but isn't a known config.
+2023-03-14 08:35:32,186 WARN  org.apache.flink.kafka.shaded.org.apache.kafka.clients.admin.AdminClientConfig [] - The configuration 'value.deserializer' was supplied but isn't a known config.
+2023-03-14 08:35:32,186 WARN  org.apache.flink.kafka.shaded.org.apache.kafka.clients.admin.AdminClientConfig [] - The configuration 'enable.auto.commit' was supplied but isn't a known config.
+2023-03-14 08:35:32,186 WARN  org.apache.flink.kafka.shaded.org.apache.kafka.clients.admin.AdminClientConfig [] - The configuration 'client.id.prefix' was supplied but isn't a known config.
+2023-03-14 08:35:32,186 WARN  org.apache.flink.kafka.shaded.org.apache.kafka.clients.admin.AdminClientConfig [] - The configuration 'group.id' was supplied but isn't a known config.
+2023-03-14 08:35:32,186 WARN  org.apache.flink.kafka.shaded.org.apache.kafka.clients.admin.AdminClientConfig [] - The configuration 'partition.discovery.interval.ms' was supplied but isn't a known config.
+2023-03-14 08:35:32,186 WARN  org.apache.flink.kafka.shaded.org.apache.kafka.clients.admin.AdminClientConfig [] - The configuration 'auto.offset.reset' was supplied but isn't a known config.
+2023-03-14 08:35:32,188 INFO  org.apache.flink.kafka.shaded.org.apache.kafka.common.utils.AppInfoParser [] - Kafka version: 3.2.0
+2023-03-14 08:35:32,188 INFO  org.apache.flink.kafka.shaded.org.apache.kafka.common.utils.AppInfoParser [] - Kafka commitId: 38103ffaa962ef50
+2023-03-14 08:35:32,188 INFO  org.apache.flink.kafka.shaded.org.apache.kafka.common.utils.AppInfoParser [] - Kafka startTimeMs: 1678782932186
+2023-03-14 08:35:32,261 INFO  org.apache.flink.connector.kafka.source.enumerator.KafkaSourceEnumerator [] - Starting the KafkaSourceEnumerator for consumer group test_k8s without periodic partition discovery.
+2023-03-14 08:35:32,269 INFO  org.apache.flink.kubernetes.KubernetesResourceManagerDriver  [] - Creating new TaskManager pod with name pyflink-flink-dome-taskmanager-1-1 and resource <10480,1.0>.
+2023-03-14 08:35:33,186 INFO  org.apache.flink.kubernetes.KubernetesResourceManagerDriver  [] - Pod pyflink-flink-dome-taskmanager-1-1 is created.
+2023-03-14 08:35:33,362 INFO  org.apache.flink.kubernetes.KubernetesResourceManagerDriver  [] - Received new TaskManager pod: pyflink-flink-dome-taskmanager-1-1
+2023-03-14 08:35:33,364 INFO  org.apache.flink.runtime.resourcemanager.active.ActiveResourceManager [] - Requested worker pyflink-flink-dome-taskmanager-1-1 with resource spec WorkerResourceSpec {cpuCores=1.0, taskHeapSize=4.242gb (4555014073 bytes), taskOffHeapSize=0 bytes, networkMemSize=920.000mb (964689934 bytes), managedMemSize=3.594gb (3858759737 bytes), numSlots=3}.
+2023-03-14 08:35:33,573 INFO  org.apache.flink.connector.kafka.source.enumerator.KafkaSourceEnumerator [] - Discovered new partitions: [akafka_script-0, akafka_script-2, akafka_script-1]
+2023-03-14 08:35:43,665 INFO  org.apache.flink.runtime.resourcemanager.active.ActiveResourceManager [] - Registering TaskManager with ResourceID pyflink-flink-dome-taskmanager-1-1 (akka.tcp://flink@172.20.1.164:6122/user/rpc/taskmanager_0) at ResourceManager
+2023-03-14 08:35:43,700 INFO  org.apache.flink.runtime.resourcemanager.active.ActiveResourceManager [] - Worker pyflink-flink-dome-taskmanager-1-1 is registered.
+2023-03-14 08:35:43,701 INFO  org.apache.flink.runtime.resourcemanager.active.ActiveResourceManager [] - Worker pyflink-flink-dome-taskmanager-1-1 with resource spec WorkerResourceSpec {cpuCores=1.0, taskHeapSize=4.242gb (4555014073 bytes), taskOffHeapSize=0 bytes, networkMemSize=920.000mb (964689934 bytes), managedMemSize=3.594gb (3858759737 bytes), numSlots=3} was requested in current attempt. Current pending count after registering: 0.
+2023-03-14 08:35:43,912 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: source_kafka[1] -> PythonCalc[2] -> sink_table[3]: Writer -> sink_table[3]: Committer (1/1) (799d7b2beada01cd2ce5f925e9f8e384) switched from SCHEDULED to DEPLOYING.
+2023-03-14 08:35:44,047 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: source_kafka[1] -> PythonCalc[2] -> sink_table[3]: Writer -> sink_table[3]: Committer (1/1) (attempt #0) with attempt id 799d7b2beada01cd2ce5f925e9f8e384 and vertex id c783d1ea922c420880b56da4fffd1f2a_0 to pyflink-flink-dome-taskmanager-1-1 @ 172.20.1.164 (dataPort=34431) with allocation id ed3e99c33f91d2e424a178287ef9b337
+2023-03-14 08:35:45,175 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: source_kafka[1] -> PythonCalc[2] -> sink_table[3]: Writer -> sink_table[3]: Committer (1/1) (799d7b2beada01cd2ce5f925e9f8e384) switched from DEPLOYING to INITIALIZING.
+2023-03-14 08:35:48,288 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: source_kafka[1] -> PythonCalc[2] -> sink_table[3]: Writer -> sink_table[3]: Committer (1/1) (799d7b2beada01cd2ce5f925e9f8e384) switched from INITIALIZING to FAILED on pyflink-flink-dome-taskmanager-1-1 @ 172.20.1.164 (dataPort=34431).
+java.util.ServiceConfigurationError: org.apache.beam.sdk.options.PipelineOptionsRegistrar: org.apache.beam.sdk.options.DefaultPipelineOptionsRegistrar not a subtype
+        at java.util.ServiceLoader.fail(Unknown Source) ~[?:?]
+        at java.util.ServiceLoader$LazyClassPathLookupIterator.hasNextService(Unknown Source) ~[?:?]
+        at java.util.ServiceLoader$LazyClassPathLookupIterator.hasNext(Unknown Source) ~[?:?]
+        at java.util.ServiceLoader$2.hasNext(Unknown Source) ~[?:?]
+        at java.util.ServiceLoader$3.hasNext(Unknown Source) ~[?:?]
+        at org.apache.beam.vendor.guava.v26_0_jre.com.google.common.collect.ImmutableCollection$Builder.addAll(ImmutableCollection.java:415) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.beam.vendor.guava.v26_0_jre.com.google.common.collect.ImmutableSet$Builder.addAll(ImmutableSet.java:507) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.beam.vendor.guava.v26_0_jre.com.google.common.collect.ImmutableSortedSet$Builder.addAll(ImmutableSortedSet.java:528) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.beam.sdk.util.common.ReflectHelpers.loadServicesOrdered(ReflectHelpers.java:199) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.beam.sdk.options.PipelineOptionsFactory$Cache.initializeRegistry(PipelineOptionsFactory.java:1816) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.beam.sdk.options.PipelineOptionsFactory$Cache.<init>(PipelineOptionsFactory.java:1810) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.beam.sdk.options.PipelineOptionsFactory$Cache.<init>(PipelineOptionsFactory.java:1779) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.beam.sdk.options.PipelineOptionsFactory.resetCache(PipelineOptionsFactory.java:543) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.beam.sdk.options.PipelineOptionsFactory.<clinit>(PipelineOptionsFactory.java:509) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.flink.streaming.api.runners.python.beam.BeamPythonFunctionRunner.open(BeamPythonFunctionRunner.java:223) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.flink.streaming.api.operators.python.AbstractExternalPythonFunctionOperator.open(AbstractExternalPythonFunctionOperator.java:56) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.flink.table.runtime.operators.python.AbstractStatelessFunctionOperator.open(AbstractStatelessFunctionOperator.java:92) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.flink.table.runtime.operators.python.scalar.AbstractPythonScalarFunctionOperator.open(AbstractPythonScalarFunctionOperator.java:101) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.flink.table.runtime.operators.python.scalar.PythonScalarFunctionOperator.open(PythonScalarFunctionOperator.java:71) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.flink.streaming.runtime.tasks.RegularOperatorChain.initializeStateAndOpenOperators(RegularOperatorChain.java:107) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.streaming.runtime.tasks.StreamTask.restoreGates(StreamTask.java:700) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.streaming.runtime.tasks.StreamTaskActionExecutor$1.call(StreamTaskActionExecutor.java:55) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.streaming.runtime.tasks.StreamTask.restoreInternal(StreamTask.java:676) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.streaming.runtime.tasks.StreamTask.restore(StreamTask.java:643) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.taskmanager.Task.runWithSystemExitMonitoring(Task.java:948) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.taskmanager.Task.restoreAndInvoke(Task.java:917) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.taskmanager.Task.doRun(Task.java:741) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.taskmanager.Task.run(Task.java:563) ~[flink-dist-1.15.0.jar:1.15.0]
+        at java.lang.Thread.run(Unknown Source) ~[?:?]
+2023-03-14 08:35:48,314 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager [] - Clearing resource requirements of job 5ca8a57e148a65e39fbd9ce1043419d2
+2023-03-14 08:35:48,316 INFO  org.apache.flink.runtime.executiongraph.failover.flip1.RestartPipelinedRegionFailoverStrategy [] - Calculating tasks to restart to recover the failed task c783d1ea922c420880b56da4fffd1f2a_0.
+2023-03-14 08:35:48,317 INFO  org.apache.flink.runtime.source.coordinator.SourceCoordinator [] - Removing registered reader after failure for subtask 0 of source Source: source_kafka[1].
+2023-03-14 08:35:48,318 INFO  org.apache.flink.runtime.executiongraph.failover.flip1.RestartPipelinedRegionFailoverStrategy [] - 1 tasks should be restarted to recover the failed task c783d1ea922c420880b56da4fffd1f2a_0. 
+2023-03-14 08:35:48,321 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Job pyflink-flink-dome (5ca8a57e148a65e39fbd9ce1043419d2) switched from state RUNNING to FAILING.
+org.apache.flink.runtime.JobException: Recovery is suppressed by NoRestartBackoffTimeStrategy
+        at org.apache.flink.runtime.executiongraph.failover.flip1.ExecutionFailureHandler.handleFailure(ExecutionFailureHandler.java:138) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.executiongraph.failover.flip1.ExecutionFailureHandler.getFailureHandlingResult(ExecutionFailureHandler.java:82) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.scheduler.DefaultScheduler.handleTaskFailure(DefaultScheduler.java:301) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.scheduler.DefaultScheduler.maybeHandleTaskFailure(DefaultScheduler.java:291) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.scheduler.DefaultScheduler.updateTaskExecutionStateInternal(DefaultScheduler.java:282) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.scheduler.SchedulerBase.updateTaskExecutionState(SchedulerBase.java:739) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.scheduler.SchedulerNG.updateTaskExecutionState(SchedulerNG.java:78) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.jobmaster.JobMaster.updateTaskExecutionState(JobMaster.java:443) ~[flink-dist-1.15.0.jar:1.15.0]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+        at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+        at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+        at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.lambda$handleRpcInvocation$1(AkkaRpcActor.java:304) ~[flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at org.apache.flink.runtime.concurrent.akka.ClassLoadingUtils.runWithContextClassLoader(ClassLoadingUtils.java:83) ~[flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleRpcInvocation(AkkaRpcActor.java:302) ~[flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleRpcMessage(AkkaRpcActor.java:217) ~[flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at org.apache.flink.runtime.rpc.akka.FencedAkkaRpcActor.handleRpcMessage(FencedAkkaRpcActor.java:78) ~[flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleMessage(AkkaRpcActor.java:163) ~[flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:24) [flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:20) [flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at scala.PartialFunction.applyOrElse(PartialFunction.scala:123) [flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at scala.PartialFunction.applyOrElse$(PartialFunction.scala:122) [flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at akka.japi.pf.UnitCaseStatement.applyOrElse(CaseStatements.scala:20) [flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:171) [flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:172) [flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:172) [flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at akka.actor.Actor.aroundReceive(Actor.scala:537) [flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at akka.actor.Actor.aroundReceive$(Actor.scala:535) [flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at akka.actor.AbstractActor.aroundReceive(AbstractActor.scala:220) [flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at akka.actor.ActorCell.receiveMessage(ActorCell.scala:580) [flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at akka.actor.ActorCell.invoke(ActorCell.scala:548) [flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270) [flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at akka.dispatch.Mailbox.run(Mailbox.scala:231) [flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at akka.dispatch.Mailbox.exec(Mailbox.scala:243) [flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) [?:?]
+        at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source) [?:?]
+        at java.util.concurrent.ForkJoinPool.scan(Unknown Source) [?:?]
+        at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) [?:?]
+        at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) [?:?]
+Caused by: java.util.ServiceConfigurationError: org.apache.beam.sdk.options.PipelineOptionsRegistrar: org.apache.beam.sdk.options.DefaultPipelineOptionsRegistrar not a subtype
+        at java.util.ServiceLoader.fail(Unknown Source) ~[?:?]
+        at java.util.ServiceLoader$LazyClassPathLookupIterator.hasNextService(Unknown Source) ~[?:?]
+        at java.util.ServiceLoader$LazyClassPathLookupIterator.hasNext(Unknown Source) ~[?:?]
+        at java.util.ServiceLoader$2.hasNext(Unknown Source) ~[?:?]
+        at java.util.ServiceLoader$3.hasNext(Unknown Source) ~[?:?]
+        at org.apache.beam.vendor.guava.v26_0_jre.com.google.common.collect.ImmutableCollection$Builder.addAll(ImmutableCollection.java:415) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.beam.vendor.guava.v26_0_jre.com.google.common.collect.ImmutableSet$Builder.addAll(ImmutableSet.java:507) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.beam.vendor.guava.v26_0_jre.com.google.common.collect.ImmutableSortedSet$Builder.addAll(ImmutableSortedSet.java:528) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.beam.sdk.util.common.ReflectHelpers.loadServicesOrdered(ReflectHelpers.java:199) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.beam.sdk.options.PipelineOptionsFactory$Cache.initializeRegistry(PipelineOptionsFactory.java:1816) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.beam.sdk.options.PipelineOptionsFactory$Cache.<init>(PipelineOptionsFactory.java:1810) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.beam.sdk.options.PipelineOptionsFactory$Cache.<init>(PipelineOptionsFactory.java:1779) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.beam.sdk.options.PipelineOptionsFactory.resetCache(PipelineOptionsFactory.java:543) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.beam.sdk.options.PipelineOptionsFactory.<clinit>(PipelineOptionsFactory.java:509) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.flink.streaming.api.runners.python.beam.BeamPythonFunctionRunner.open(BeamPythonFunctionRunner.java:223) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.flink.streaming.api.operators.python.AbstractExternalPythonFunctionOperator.open(AbstractExternalPythonFunctionOperator.java:56) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.flink.table.runtime.operators.python.AbstractStatelessFunctionOperator.open(AbstractStatelessFunctionOperator.java:92) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.flink.table.runtime.operators.python.scalar.AbstractPythonScalarFunctionOperator.open(AbstractPythonScalarFunctionOperator.java:101) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.flink.table.runtime.operators.python.scalar.PythonScalarFunctionOperator.open(PythonScalarFunctionOperator.java:71) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.flink.streaming.runtime.tasks.RegularOperatorChain.initializeStateAndOpenOperators(RegularOperatorChain.java:107) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.streaming.runtime.tasks.StreamTask.restoreGates(StreamTask.java:700) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.streaming.runtime.tasks.StreamTaskActionExecutor$1.call(StreamTaskActionExecutor.java:55) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.streaming.runtime.tasks.StreamTask.restoreInternal(StreamTask.java:676) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.streaming.runtime.tasks.StreamTask.restore(StreamTask.java:643) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.taskmanager.Task.runWithSystemExitMonitoring(Task.java:948) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.taskmanager.Task.restoreAndInvoke(Task.java:917) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.taskmanager.Task.doRun(Task.java:741) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.taskmanager.Task.run(Task.java:563) ~[flink-dist-1.15.0.jar:1.15.0]
+        at java.lang.Thread.run(Unknown Source) ~[?:?]
+2023-03-14 08:35:48,330 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Job pyflink-flink-dome (5ca8a57e148a65e39fbd9ce1043419d2) switched from state FAILING to FAILED.
+org.apache.flink.runtime.JobException: Recovery is suppressed by NoRestartBackoffTimeStrategy
+        at org.apache.flink.runtime.executiongraph.failover.flip1.ExecutionFailureHandler.handleFailure(ExecutionFailureHandler.java:138) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.executiongraph.failover.flip1.ExecutionFailureHandler.getFailureHandlingResult(ExecutionFailureHandler.java:82) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.scheduler.DefaultScheduler.handleTaskFailure(DefaultScheduler.java:301) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.scheduler.DefaultScheduler.maybeHandleTaskFailure(DefaultScheduler.java:291) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.scheduler.DefaultScheduler.updateTaskExecutionStateInternal(DefaultScheduler.java:282) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.scheduler.SchedulerBase.updateTaskExecutionState(SchedulerBase.java:739) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.scheduler.SchedulerNG.updateTaskExecutionState(SchedulerNG.java:78) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.jobmaster.JobMaster.updateTaskExecutionState(JobMaster.java:443) ~[flink-dist-1.15.0.jar:1.15.0]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+        at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+        at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+        at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.lambda$handleRpcInvocation$1(AkkaRpcActor.java:304) ~[flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at org.apache.flink.runtime.concurrent.akka.ClassLoadingUtils.runWithContextClassLoader(ClassLoadingUtils.java:83) ~[flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleRpcInvocation(AkkaRpcActor.java:302) ~[flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleRpcMessage(AkkaRpcActor.java:217) ~[flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at org.apache.flink.runtime.rpc.akka.FencedAkkaRpcActor.handleRpcMessage(FencedAkkaRpcActor.java:78) ~[flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleMessage(AkkaRpcActor.java:163) ~[flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:24) [flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:20) [flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at scala.PartialFunction.applyOrElse(PartialFunction.scala:123) [flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at scala.PartialFunction.applyOrElse$(PartialFunction.scala:122) [flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at akka.japi.pf.UnitCaseStatement.applyOrElse(CaseStatements.scala:20) [flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:171) [flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:172) [flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:172) [flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at akka.actor.Actor.aroundReceive(Actor.scala:537) [flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at akka.actor.Actor.aroundReceive$(Actor.scala:535) [flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at akka.actor.AbstractActor.aroundReceive(AbstractActor.scala:220) [flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at akka.actor.ActorCell.receiveMessage(ActorCell.scala:580) [flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at akka.actor.ActorCell.invoke(ActorCell.scala:548) [flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270) [flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at akka.dispatch.Mailbox.run(Mailbox.scala:231) [flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at akka.dispatch.Mailbox.exec(Mailbox.scala:243) [flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) [?:?]
+        at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source) [?:?]
+        at java.util.concurrent.ForkJoinPool.scan(Unknown Source) [?:?]
+        at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) [?:?]
+        at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) [?:?]
+Caused by: java.util.ServiceConfigurationError: org.apache.beam.sdk.options.PipelineOptionsRegistrar: org.apache.beam.sdk.options.DefaultPipelineOptionsRegistrar not a subtype
+        at java.util.ServiceLoader.fail(Unknown Source) ~[?:?]
+        at java.util.ServiceLoader$LazyClassPathLookupIterator.hasNextService(Unknown Source) ~[?:?]
+        at java.util.ServiceLoader$LazyClassPathLookupIterator.hasNext(Unknown Source) ~[?:?]
+        at java.util.ServiceLoader$2.hasNext(Unknown Source) ~[?:?]
+        at java.util.ServiceLoader$3.hasNext(Unknown Source) ~[?:?]
+        at org.apache.beam.vendor.guava.v26_0_jre.com.google.common.collect.ImmutableCollection$Builder.addAll(ImmutableCollection.java:415) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.beam.vendor.guava.v26_0_jre.com.google.common.collect.ImmutableSet$Builder.addAll(ImmutableSet.java:507) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.beam.vendor.guava.v26_0_jre.com.google.common.collect.ImmutableSortedSet$Builder.addAll(ImmutableSortedSet.java:528) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.beam.sdk.util.common.ReflectHelpers.loadServicesOrdered(ReflectHelpers.java:199) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.beam.sdk.options.PipelineOptionsFactory$Cache.initializeRegistry(PipelineOptionsFactory.java:1816) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.beam.sdk.options.PipelineOptionsFactory$Cache.<init>(PipelineOptionsFactory.java:1810) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.beam.sdk.options.PipelineOptionsFactory$Cache.<init>(PipelineOptionsFactory.java:1779) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.beam.sdk.options.PipelineOptionsFactory.resetCache(PipelineOptionsFactory.java:543) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.beam.sdk.options.PipelineOptionsFactory.<clinit>(PipelineOptionsFactory.java:509) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.flink.streaming.api.runners.python.beam.BeamPythonFunctionRunner.open(BeamPythonFunctionRunner.java:223) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.flink.streaming.api.operators.python.AbstractExternalPythonFunctionOperator.open(AbstractExternalPythonFunctionOperator.java:56) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.flink.table.runtime.operators.python.AbstractStatelessFunctionOperator.open(AbstractStatelessFunctionOperator.java:92) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.flink.table.runtime.operators.python.scalar.AbstractPythonScalarFunctionOperator.open(AbstractPythonScalarFunctionOperator.java:101) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.flink.table.runtime.operators.python.scalar.PythonScalarFunctionOperator.open(PythonScalarFunctionOperator.java:71) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.flink.streaming.runtime.tasks.RegularOperatorChain.initializeStateAndOpenOperators(RegularOperatorChain.java:107) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.streaming.runtime.tasks.StreamTask.restoreGates(StreamTask.java:700) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.streaming.runtime.tasks.StreamTaskActionExecutor$1.call(StreamTaskActionExecutor.java:55) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.streaming.runtime.tasks.StreamTask.restoreInternal(StreamTask.java:676) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.streaming.runtime.tasks.StreamTask.restore(StreamTask.java:643) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.taskmanager.Task.runWithSystemExitMonitoring(Task.java:948) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.taskmanager.Task.restoreAndInvoke(Task.java:917) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.taskmanager.Task.doRun(Task.java:741) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.taskmanager.Task.run(Task.java:563) ~[flink-dist-1.15.0.jar:1.15.0]
+        at java.lang.Thread.run(Unknown Source) ~[?:?]
+2023-03-14 08:35:48,331 INFO  org.apache.flink.runtime.checkpoint.CheckpointCoordinator    [] - Stopping checkpoint coordinator for job 5ca8a57e148a65e39fbd9ce1043419d2.
+2023-03-14 08:35:48,337 WARN  org.apache.flink.runtime.taskmanager.TaskManagerLocation     [] - No hostname could be resolved for the IP address 172.20.1.164, using IP address as host name. Local input split assignment (such as for HDFS files) may be impacted.
+2023-03-14 08:35:48,343 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher     [] - Job 5ca8a57e148a65e39fbd9ce1043419d2 reached terminal state FAILED.
+org.apache.flink.runtime.JobException: Recovery is suppressed by NoRestartBackoffTimeStrategy
+        at org.apache.flink.runtime.executiongraph.failover.flip1.ExecutionFailureHandler.handleFailure(ExecutionFailureHandler.java:138)
+        at org.apache.flink.runtime.executiongraph.failover.flip1.ExecutionFailureHandler.getFailureHandlingResult(ExecutionFailureHandler.java:82)
+        at org.apache.flink.runtime.scheduler.DefaultScheduler.handleTaskFailure(DefaultScheduler.java:301)
+        at org.apache.flink.runtime.scheduler.DefaultScheduler.maybeHandleTaskFailure(DefaultScheduler.java:291)
+        at org.apache.flink.runtime.scheduler.DefaultScheduler.updateTaskExecutionStateInternal(DefaultScheduler.java:282)
+        at org.apache.flink.runtime.scheduler.SchedulerBase.updateTaskExecutionState(SchedulerBase.java:739)
+        at org.apache.flink.runtime.scheduler.SchedulerNG.updateTaskExecutionState(SchedulerNG.java:78)
+        at org.apache.flink.runtime.jobmaster.JobMaster.updateTaskExecutionState(JobMaster.java:443)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+        at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+        at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.lambda$handleRpcInvocation$1(AkkaRpcActor.java:304)
+        at org.apache.flink.runtime.concurrent.akka.ClassLoadingUtils.runWithContextClassLoader(ClassLoadingUtils.java:83)
+        at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleRpcInvocation(AkkaRpcActor.java:302)
+        at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleRpcMessage(AkkaRpcActor.java:217)
+        at org.apache.flink.runtime.rpc.akka.FencedAkkaRpcActor.handleRpcMessage(FencedAkkaRpcActor.java:78)
+        at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleMessage(AkkaRpcActor.java:163)
+        at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:24)
+        at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:20)
+        at scala.PartialFunction.applyOrElse(PartialFunction.scala:123)
+        at scala.PartialFunction.applyOrElse$(PartialFunction.scala:122)
+        at akka.japi.pf.UnitCaseStatement.applyOrElse(CaseStatements.scala:20)
+        at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:171)
+        at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:172)
+        at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:172)
+        at akka.actor.Actor.aroundReceive(Actor.scala:537)
+        at akka.actor.Actor.aroundReceive$(Actor.scala:535)
+        at akka.actor.AbstractActor.aroundReceive(AbstractActor.scala:220)
+        at akka.actor.ActorCell.receiveMessage(ActorCell.scala:580)
+        at akka.actor.ActorCell.invoke(ActorCell.scala:548)
+        at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270)
+        at akka.dispatch.Mailbox.run(Mailbox.scala:231)
+        at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
+        at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+        at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+        at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+        at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+        at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+Caused by: java.util.ServiceConfigurationError: org.apache.beam.sdk.options.PipelineOptionsRegistrar: org.apache.beam.sdk.options.DefaultPipelineOptionsRegistrar not a subtype
+        at java.base/java.util.ServiceLoader.fail(Unknown Source)
+        at java.base/java.util.ServiceLoader$LazyClassPathLookupIterator.hasNextService(Unknown Source)
+        at java.base/java.util.ServiceLoader$LazyClassPathLookupIterator.hasNext(Unknown Source)
+        at java.base/java.util.ServiceLoader$2.hasNext(Unknown Source)
+        at java.base/java.util.ServiceLoader$3.hasNext(Unknown Source)
+        at org.apache.beam.vendor.guava.v26_0_jre.com.google.common.collect.ImmutableCollection$Builder.addAll(ImmutableCollection.java:415)
+        at org.apache.beam.vendor.guava.v26_0_jre.com.google.common.collect.ImmutableSet$Builder.addAll(ImmutableSet.java:507)
+        at org.apache.beam.vendor.guava.v26_0_jre.com.google.common.collect.ImmutableSortedSet$Builder.addAll(ImmutableSortedSet.java:528)
+        at org.apache.beam.sdk.util.common.ReflectHelpers.loadServicesOrdered(ReflectHelpers.java:199)
+        at org.apache.beam.sdk.options.PipelineOptionsFactory$Cache.initializeRegistry(PipelineOptionsFactory.java:1816)
+        at org.apache.beam.sdk.options.PipelineOptionsFactory$Cache.<init>(PipelineOptionsFactory.java:1810)
+        at org.apache.beam.sdk.options.PipelineOptionsFactory$Cache.<init>(PipelineOptionsFactory.java:1779)
+        at org.apache.beam.sdk.options.PipelineOptionsFactory.resetCache(PipelineOptionsFactory.java:543)
+        at org.apache.beam.sdk.options.PipelineOptionsFactory.<clinit>(PipelineOptionsFactory.java:509)
+        at org.apache.flink.streaming.api.runners.python.beam.BeamPythonFunctionRunner.open(BeamPythonFunctionRunner.java:223)
+        at org.apache.flink.streaming.api.operators.python.AbstractExternalPythonFunctionOperator.open(AbstractExternalPythonFunctionOperator.java:56)
+        at org.apache.flink.table.runtime.operators.python.AbstractStatelessFunctionOperator.open(AbstractStatelessFunctionOperator.java:92)
+        at org.apache.flink.table.runtime.operators.python.scalar.AbstractPythonScalarFunctionOperator.open(AbstractPythonScalarFunctionOperator.java:101)
+        at org.apache.flink.table.runtime.operators.python.scalar.PythonScalarFunctionOperator.open(PythonScalarFunctionOperator.java:71)
+        at org.apache.flink.streaming.runtime.tasks.RegularOperatorChain.initializeStateAndOpenOperators(RegularOperatorChain.java:107)
+        at org.apache.flink.streaming.runtime.tasks.StreamTask.restoreGates(StreamTask.java:700)
+        at org.apache.flink.streaming.runtime.tasks.StreamTaskActionExecutor$1.call(StreamTaskActionExecutor.java:55)
+        at org.apache.flink.streaming.runtime.tasks.StreamTask.restoreInternal(StreamTask.java:676)
+        at org.apache.flink.streaming.runtime.tasks.StreamTask.restore(StreamTask.java:643)
+        at org.apache.flink.runtime.taskmanager.Task.runWithSystemExitMonitoring(Task.java:948)
+        at org.apache.flink.runtime.taskmanager.Task.restoreAndInvoke(Task.java:917)
+        at org.apache.flink.runtime.taskmanager.Task.doRun(Task.java:741)
+        at org.apache.flink.runtime.taskmanager.Task.run(Task.java:563)
+        at java.base/java.lang.Thread.run(Unknown Source)
+2023-03-14 08:35:48,363 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher     [] - Job 5ca8a57e148a65e39fbd9ce1043419d2 has been registered for cleanup in the JobResultStore after reaching a terminal state.
+2023-03-14 08:35:48,367 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Stopping the JobMaster for job 'pyflink-flink-dome' (5ca8a57e148a65e39fbd9ce1043419d2).
+2023-03-14 08:35:48,372 INFO  org.apache.flink.runtime.source.coordinator.SourceCoordinator [] - Closing SourceCoordinator for source Source: source_kafka[1].
+2023-03-14 08:35:48,378 INFO  org.apache.flink.runtime.checkpoint.StandaloneCompletedCheckpointStore [] - Shutting down
+2023-03-14 08:35:48,378 INFO  org.apache.flink.kafka.shaded.org.apache.kafka.common.utils.AppInfoParser [] - App info kafka.admin.client for test_k8s-enumerator-admin-client unregistered
+2023-03-14 08:35:48,379 INFO  org.apache.flink.runtime.jobmaster.slotpool.DefaultDeclarativeSlotPool [] - Releasing slot [ed3e99c33f91d2e424a178287ef9b337].
+2023-03-14 08:35:48,381 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Close ResourceManager connection 6ce9dad37bc2ce7f6383bb52b4c34f8c: Stopping JobMaster for job 'pyflink-flink-dome' (5ca8a57e148a65e39fbd9ce1043419d2).
+2023-03-14 08:35:48,382 INFO  org.apache.flink.runtime.resourcemanager.active.ActiveResourceManager [] - Disconnect job manager 00000000000000000000000000000000@akka.tcp://flink@pyflink-flink-dome.default:6123/user/rpc/jobmanager_2 for job 5ca8a57e148a65e39fbd9ce1043419d2 from the resource manager.
+2023-03-14 08:35:48,461 INFO  org.apache.flink.kafka.shaded.org.apache.kafka.common.metrics.Metrics [] - Metrics scheduler closed
+2023-03-14 08:35:48,462 INFO  org.apache.flink.kafka.shaded.org.apache.kafka.common.metrics.Metrics [] - Closing reporter org.apache.flink.kafka.shaded.org.apache.kafka.common.metrics.JmxReporter
+2023-03-14 08:35:48,462 INFO  org.apache.flink.kafka.shaded.org.apache.kafka.common.metrics.Metrics [] - Metrics reporters closed
+2023-03-14 08:35:48,462 INFO  org.apache.flink.runtime.source.coordinator.SourceCoordinator [] - Source coordinator for source Source: source_kafka[1] closed.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/local/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/tmp/pyflink/d00b9e06-64dd-43e2-b0a6-c196a0be3d0d/c062b4a1-0ba8-433e-8c7f-3f6a94357fc3/python_demo.py", line 53, in <module>
+    to_kafka_sink()
+  File "/tmp/pyflink/d00b9e06-64dd-43e2-b0a6-c196a0be3d0d/c062b4a1-0ba8-433e-8c7f-3f6a94357fc3/python_demo.py", line 49, in to_kafka_sink
+    statement_set.execute().wait()
+  File "/opt/flink/opt/python/pyflink.zip/pyflink/table/table_result.py", line 76, in wait
+  File "/opt/flink/opt/python/py4j-0.10.9.3-src.zip/py4j/java_gateway.py", line 1321, in __call__
+  File "/opt/flink/opt/python/pyflink.zip/pyflink/util/exceptions.py", line 146, in deco
+  File "/opt/flink/opt/python/py4j-0.10.9.3-src.zip/py4j/protocol.py", line 326, in get_return_value
+py4j.protocol.Py4JJavaError: An error occurred while calling o158.await.
+: java.util.concurrent.ExecutionException: org.apache.flink.table.api.TableException: Failed to wait job finish
+        at java.base/java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+        at java.base/java.util.concurrent.CompletableFuture.get(Unknown Source)
+        at org.apache.flink.table.api.internal.TableResultImpl.awaitInternal(TableResultImpl.java:118)
+        at org.apache.flink.table.api.internal.TableResultImpl.await(TableResultImpl.java:81)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+        at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+        at org.apache.flink.api.python.shaded.py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+        at org.apache.flink.api.python.shaded.py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+        at org.apache.flink.api.python.shaded.py4j.Gateway.invoke(Gateway.java:282)
+        at org.apache.flink.api.python.shaded.py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+        at org.apache.flink.api.python.shaded.py4j.commands.CallCommand.execute(CallCommand.java:79)
+        at org.apache.flink.api.python.shaded.py4j.GatewayConnection.run(GatewayConnection.java:238)
+        at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.flink.table.api.TableException: Failed to wait job finish
+        at org.apache.flink.table.api.internal.InsertResultProvider.hasNext(InsertResultProvider.java:85)
+        at org.apache.flink.table.api.internal.InsertResultProvider.isFirstRowReady(InsertResultProvider.java:71)
+        at org.apache.flink.table.api.internal.TableResultImpl.lambda$awaitInternal$1(TableResultImpl.java:105)
+        at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(Unknown Source)
+        at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+        at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+        ... 1 more
+Caused by: java.util.concurrent.ExecutionException: org.apache.flink.client.deployment.application.UnsuccessfulExecutionException: Application Status: FAILED
+        at java.base/java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+        at java.base/java.util.concurrent.CompletableFuture.get(Unknown Source)
+        at org.apache.flink.table.api.internal.InsertResultProvider.hasNext(InsertResultProvider.java:83)
+        ... 6 more
+Caused by: org.apache.flink.client.deployment.application.UnsuccessfulExecutionException: Application Status: FAILED
+        at org.apache.flink.client.deployment.application.UnsuccessfulExecutionException.fromJobResult(UnsuccessfulExecutionException.java:71)
+        at org.apache.flink.client.deployment.application.EmbeddedJobClient.lambda$getJobExecutionResult$2(EmbeddedJobClient.java:148)
+        at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(Unknown Source)
+        at java.base/java.util.concurrent.CompletableFuture.postComplete(Unknown Source)
+        at java.base/java.util.concurrent.CompletableFuture.complete(Unknown Source)
+        at org.apache.flink.client.deployment.application.JobStatusPollingUtils.lambda$null$2(JobStatusPollingUtils.java:101)
+        at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(Unknown Source)
+        at java.base/java.util.concurrent.CompletableFuture.uniWhenCompleteStage(Unknown Source)
+        at java.base/java.util.concurrent.CompletableFuture.whenComplete(Unknown Source)
+        at org.apache.flink.client.deployment.application.JobStatusPollingUtils.lambda$pollJobResultAsync$4(JobStatusPollingUtils.java:96)
+        at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(Unknown Source)
+        at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(Unknown Source)
+        at java.base/java.util.concurrent.CompletableFuture.postComplete(Unknown Source)
+        at java.base/java.util.concurrent.CompletableFuture.complete(Unknown Source)
+        at org.apache.flink.runtime.rpc.akka.AkkaInvocationHandler.lambda$invokeRpc$1(AkkaInvocationHandler.java:259)
+        at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(Unknown Source)
+        at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(Unknown Source)
+        at java.base/java.util.concurrent.CompletableFuture.postComplete(Unknown Source)
+        at java.base/java.util.concurrent.CompletableFuture.complete(Unknown Source)
+        at org.apache.flink.util.concurrent.FutureUtils.doForward(FutureUtils.java:1389)
+        at org.apache.flink.runtime.concurrent.akka.ClassLoadingUtils.lambda$null$1(ClassLoadingUtils.java:93)
+        at org.apache.flink.runtime.concurrent.akka.ClassLoadingUtils.runWithContextClassLoader(ClassLoadingUtils.java:68)
+        at org.apache.flink.runtime.concurrent.akka.ClassLoadingUtils.lambda$guardCompletionWithContextClassLoader$2(ClassLoadingUtils.java:92)
+        at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(Unknown Source)
+        at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(Unknown Source)
+        at java.base/java.util.concurrent.CompletableFuture.postComplete(Unknown Source)
+        at java.base/java.util.concurrent.CompletableFuture.complete(Unknown Source)
+        at org.apache.flink.runtime.concurrent.akka.AkkaFutureUtils$1.onComplete(AkkaFutureUtils.java:47)
+        at akka.dispatch.OnComplete.internal(Future.scala:300)
+        at akka.dispatch.OnComplete.internal(Future.scala:297)
+        at akka.dispatch.japi$CallbackBridge.apply(Future.scala:224)
+        at akka.dispatch.japi$CallbackBridge.apply(Future.scala:221)
+        at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+        at org.apache.flink.runtime.concurrent.akka.AkkaFutureUtils$DirectExecutionContext.execute(AkkaFutureUtils.java:65)
+        at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:68)
+        at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1(Promise.scala:284)
+        at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1$adapted(Promise.scala:284)
+        at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:284)
+        at akka.pattern.PromiseActorRef.$bang(AskSupport.scala:621)
+        at akka.pattern.PipeToSupport$PipeableFuture$$anonfun$pipeTo$1.applyOrElse(PipeToSupport.scala:24)
+        at akka.pattern.PipeToSupport$PipeableFuture$$anonfun$pipeTo$1.applyOrElse(PipeToSupport.scala:23)
+        at scala.concurrent.Future.$anonfun$andThen$1(Future.scala:532)
+        at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+        at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+        at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+        at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:63)
+        at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:100)
+        at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+        at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:81)
+        at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:100)
+        at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:49)
+        at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:48)
+        at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+        at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+        at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+        at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+        at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+Caused by: org.apache.flink.runtime.client.JobExecutionException: Job execution failed.
+        at org.apache.flink.runtime.jobmaster.JobResult.toJobExecutionResult(JobResult.java:144)
+        at org.apache.flink.client.deployment.application.UnsuccessfulExecutionException.fromJobResult(UnsuccessfulExecutionException.java:60)
+        ... 56 more
+Caused by: org.apache.flink.runtime.JobException: Recovery is suppressed by NoRestartBackoffTimeStrategy
+        at org.apache.flink.runtime.executiongraph.failover.flip1.ExecutionFailureHandler.handleFailure(ExecutionFailureHandler.java:138)
+        at org.apache.flink.runtime.executiongraph.failover.flip1.ExecutionFailureHandler.getFailureHandlingResult(ExecutionFailureHandler.java:82)
+        at org.apache.flink.runtime.scheduler.DefaultScheduler.handleTaskFailure(DefaultScheduler.java:301)
+        at org.apache.flink.runtime.scheduler.DefaultScheduler.maybeHandleTaskFailure(DefaultScheduler.java:291)
+        at org.apache.flink.runtime.scheduler.DefaultScheduler.updateTaskExecutionStateInternal(DefaultScheduler.java:282)
+        at org.apache.flink.runtime.scheduler.SchedulerBase.updateTaskExecutionState(SchedulerBase.java:739)
+        at org.apache.flink.runtime.scheduler.SchedulerNG.updateTaskExecutionState(SchedulerNG.java:78)
+        at org.apache.flink.runtime.jobmaster.JobMaster.updateTaskExecutionState(JobMaster.java:443)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+        at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+        at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.lambda$handleRpcInvocation$1(AkkaRpcActor.java:304)
+        at org.apache.flink.runtime.concurrent.akka.ClassLoadingUtils.runWithContextClassLoader(ClassLoadingUtils.java:83)
+        at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleRpcInvocation(AkkaRpcActor.java:302)
+        at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleRpcMessage(AkkaRpcActor.java:217)
+        at org.apache.flink.runtime.rpc.akka.FencedAkkaRpcActor.handleRpcMessage(FencedAkkaRpcActor.java:78)
+        at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleMessage(AkkaRpcActor.java:163)
+        at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:24)
+        at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:20)
+        at scala.PartialFunction.applyOrElse(PartialFunction.scala:123)
+        at scala.PartialFunction.applyOrElse$(PartialFunction.scala:122)
+        at akka.japi.pf.UnitCaseStatement.applyOrElse(CaseStatements.scala:20)
+        at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:171)
+        at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:172)
+        at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:172)
+        at akka.actor.Actor.aroundReceive(Actor.scala:537)
+        at akka.actor.Actor.aroundReceive$(Actor.scala:535)
+        at akka.actor.AbstractActor.aroundReceive(AbstractActor.scala:220)
+        at akka.actor.ActorCell.receiveMessage(ActorCell.scala:580)
+        at akka.actor.ActorCell.invoke(ActorCell.scala:548)
+        at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270)
+        at akka.dispatch.Mailbox.run(Mailbox.scala:231)
+        at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
+        ... 5 more
+Caused by: java.util.ServiceConfigurationError: org.apache.beam.sdk.options.PipelineOptionsRegistrar: org.apache.beam.sdk.options.DefaultPipelineOptionsRegistrar not a subtype
+        at java.base/java.util.ServiceLoader.fail(Unknown Source)
+        at java.base/java.util.ServiceLoader$LazyClassPathLookupIterator.hasNextService(Unknown Source)
+        at java.base/java.util.ServiceLoader$LazyClassPathLookupIterator.hasNext(Unknown Source)
+        at java.base/java.util.ServiceLoader$2.hasNext(Unknown Source)
+        at java.base/java.util.ServiceLoader$3.hasNext(Unknown Source)
+        at org.apache.beam.vendor.guava.v26_0_jre.com.google.common.collect.ImmutableCollection$Builder.addAll(ImmutableCollection.java:415)
+        at org.apache.beam.vendor.guava.v26_0_jre.com.google.common.collect.ImmutableSet$Builder.addAll(ImmutableSet.java:507)
+        at org.apache.beam.vendor.guava.v26_0_jre.com.google.common.collect.ImmutableSortedSet$Builder.addAll(ImmutableSortedSet.java:528)
+        at org.apache.beam.sdk.util.common.ReflectHelpers.loadServicesOrdered(ReflectHelpers.java:199)
+        at org.apache.beam.sdk.options.PipelineOptionsFactory$Cache.initializeRegistry(PipelineOptionsFactory.java:1816)
+        at org.apache.beam.sdk.options.PipelineOptionsFactory$Cache.<init>(PipelineOptionsFactory.java:1810)
+        at org.apache.beam.sdk.options.PipelineOptionsFactory$Cache.<init>(PipelineOptionsFactory.java:1779)
+        at org.apache.beam.sdk.options.PipelineOptionsFactory.resetCache(PipelineOptionsFactory.java:543)
+        at org.apache.beam.sdk.options.PipelineOptionsFactory.<clinit>(PipelineOptionsFactory.java:509)
+        at org.apache.flink.streaming.api.runners.python.beam.BeamPythonFunctionRunner.open(BeamPythonFunctionRunner.java:223)
+        at org.apache.flink.streaming.api.operators.python.AbstractExternalPythonFunctionOperator.open(AbstractExternalPythonFunctionOperator.java:56)
+        at org.apache.flink.table.runtime.operators.python.AbstractStatelessFunctionOperator.open(AbstractStatelessFunctionOperator.java:92)
+        at org.apache.flink.table.runtime.operators.python.scalar.AbstractPythonScalarFunctionOperator.open(AbstractPythonScalarFunctionOperator.java:101)
+        at org.apache.flink.table.runtime.operators.python.scalar.PythonScalarFunctionOperator.open(PythonScalarFunctionOperator.java:71)
+        at org.apache.flink.streaming.runtime.tasks.RegularOperatorChain.initializeStateAndOpenOperators(RegularOperatorChain.java:107)
+        at org.apache.flink.streaming.runtime.tasks.StreamTask.restoreGates(StreamTask.java:700)
+        at org.apache.flink.streaming.runtime.tasks.StreamTaskActionExecutor$1.call(StreamTaskActionExecutor.java:55)
+        at org.apache.flink.streaming.runtime.tasks.StreamTask.restoreInternal(StreamTask.java:676)
+        at org.apache.flink.streaming.runtime.tasks.StreamTask.restore(StreamTask.java:643)
+        at org.apache.flink.runtime.taskmanager.Task.runWithSystemExitMonitoring(Task.java:948)
+        at org.apache.flink.runtime.taskmanager.Task.restoreAndInvoke(Task.java:917)
+        at org.apache.flink.runtime.taskmanager.Task.doRun(Task.java:741)
+        at org.apache.flink.runtime.taskmanager.Task.run(Task.java:563)
+        at java.base/java.lang.Thread.run(Unknown Source)
+2023-03-14 08:35:48,594 INFO  org.apache.flink.client.python.PythonDriver                  [] - Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/local/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/tmp/pyflink/d00b9e06-64dd-43e2-b0a6-c196a0be3d0d/c062b4a1-0ba8-433e-8c7f-3f6a94357fc3/python_demo.py", line 53, in <module>
+    to_kafka_sink()
+  File "/tmp/pyflink/d00b9e06-64dd-43e2-b0a6-c196a0be3d0d/c062b4a1-0ba8-433e-8c7f-3f6a94357fc3/python_demo.py", line 49, in to_kafka_sink
+    statement_set.execute().wait()
+  File "/opt/flink/opt/python/pyflink.zip/pyflink/table/table_result.py", line 76, in wait
+  File "/opt/flink/opt/python/py4j-0.10.9.3-src.zip/py4j/java_gateway.py", line 1321, in __call__
+  File "/opt/flink/opt/python/pyflink.zip/pyflink/util/exceptions.py", line 146, in deco
+  File "/opt/flink/opt/python/py4j-0.10.9.3-src.zip/py4j/protocol.py", line 326, in get_return_value
+py4j.protocol.Py4JJavaError: An error occurred while calling o158.await.
+: java.util.concurrent.ExecutionException: org.apache.flink.table.api.TableException: Failed to wait job finish
+        at java.base/java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+        at java.base/java.util.concurrent.CompletableFuture.get(Unknown Source)
+        at org.apache.flink.table.api.internal.TableResultImpl.awaitInternal(TableResultImpl.java:118)
+        at org.apache.flink.table.api.internal.TableResultImpl.await(TableResultImpl.java:81)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+        at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+        at org.apache.flink.api.python.shaded.py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+        at org.apache.flink.api.python.shaded.py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+        at org.apache.flink.api.python.shaded.py4j.Gateway.invoke(Gateway.java:282)
+        at org.apache.flink.api.python.shaded.py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+        at org.apache.flink.api.python.shaded.py4j.commands.CallCommand.execute(CallCommand.java:79)
+        at org.apache.flink.api.python.shaded.py4j.GatewayConnection.run(GatewayConnection.java:238)
+        at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.flink.table.api.TableException: Failed to wait job finish
+        at org.apache.flink.table.api.internal.InsertResultProvider.hasNext(InsertResultProvider.java:85)
+        at org.apache.flink.table.api.internal.InsertResultProvider.isFirstRowReady(InsertResultProvider.java:71)
+        at org.apache.flink.table.api.internal.TableResultImpl.lambda$awaitInternal$1(TableResultImpl.java:105)
+        at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(Unknown Source)
+        at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+        at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+        ... 1 more
+Caused by: java.util.concurrent.ExecutionException: org.apache.flink.client.deployment.application.UnsuccessfulExecutionException: Application Status: FAILED
+        at java.base/java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+        at java.base/java.util.concurrent.CompletableFuture.get(Unknown Source)
+        at org.apache.flink.table.api.internal.InsertResultProvider.hasNext(InsertResultProvider.java:83)
+        ... 6 more
+Caused by: org.apache.flink.client.deployment.application.UnsuccessfulExecutionException: Application Status: FAILED
+        at org.apache.flink.client.deployment.application.UnsuccessfulExecutionException.fromJobResult(UnsuccessfulExecutionException.java:71)
+        at org.apache.flink.client.deployment.application.EmbeddedJobClient.lambda$getJobExecutionResult$2(EmbeddedJobClient.java:148)
+        at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(Unknown Source)
+        at java.base/java.util.concurrent.CompletableFuture.postComplete(Unknown Source)
+        at java.base/java.util.concurrent.CompletableFuture.complete(Unknown Source)
+        at org.apache.flink.client.deployment.application.JobStatusPollingUtils.lambda$null$2(JobStatusPollingUtils.java:101)
+        at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(Unknown Source)
+        at java.base/java.util.concurrent.CompletableFuture.uniWhenCompleteStage(Unknown Source)
+        at java.base/java.util.concurrent.CompletableFuture.whenComplete(Unknown Source)
+        at org.apache.flink.client.deployment.application.JobStatusPollingUtils.lambda$pollJobResultAsync$4(JobStatusPollingUtils.java:96)
+        at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(Unknown Source)
+        at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(Unknown Source)
+        at java.base/java.util.concurrent.CompletableFuture.postComplete(Unknown Source)
+        at java.base/java.util.concurrent.CompletableFuture.complete(Unknown Source)
+        at org.apache.flink.runtime.rpc.akka.AkkaInvocationHandler.lambda$invokeRpc$1(AkkaInvocationHandler.java:259)
+        at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(Unknown Source)
+        at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(Unknown Source)
+        at java.base/java.util.concurrent.CompletableFuture.postComplete(Unknown Source)
+        at java.base/java.util.concurrent.CompletableFuture.complete(Unknown Source)
+        at org.apache.flink.util.concurrent.FutureUtils.doForward(FutureUtils.java:1389)
+        at org.apache.flink.runtime.concurrent.akka.ClassLoadingUtils.lambda$null$1(ClassLoadingUtils.java:93)
+        at org.apache.flink.runtime.concurrent.akka.ClassLoadingUtils.runWithContextClassLoader(ClassLoadingUtils.java:68)
+        at org.apache.flink.runtime.concurrent.akka.ClassLoadingUtils.lambda$guardCompletionWithContextClassLoader$2(ClassLoadingUtils.java:92)
+        at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(Unknown Source)
+        at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(Unknown Source)
+        at java.base/java.util.concurrent.CompletableFuture.postComplete(Unknown Source)
+        at java.base/java.util.concurrent.CompletableFuture.complete(Unknown Source)
+        at org.apache.flink.runtime.concurrent.akka.AkkaFutureUtils$1.onComplete(AkkaFutureUtils.java:47)
+        at akka.dispatch.OnComplete.internal(Future.scala:300)
+        at akka.dispatch.OnComplete.internal(Future.scala:297)
+        at akka.dispatch.japi$CallbackBridge.apply(Future.scala:224)
+        at akka.dispatch.japi$CallbackBridge.apply(Future.scala:221)
+        at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+        at org.apache.flink.runtime.concurrent.akka.AkkaFutureUtils$DirectExecutionContext.execute(AkkaFutureUtils.java:65)
+        at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:68)
+        at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1(Promise.scala:284)
+        at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1$adapted(Promise.scala:284)
+        at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:284)
+        at akka.pattern.PromiseActorRef.$bang(AskSupport.scala:621)
+        at akka.pattern.PipeToSupport$PipeableFuture$$anonfun$pipeTo$1.applyOrElse(PipeToSupport.scala:24)
+        at akka.pattern.PipeToSupport$PipeableFuture$$anonfun$pipeTo$1.applyOrElse(PipeToSupport.scala:23)
+        at scala.concurrent.Future.$anonfun$andThen$1(Future.scala:532)
+        at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+        at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+        at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+        at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:63)
+        at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:100)
+        at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+        at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:81)
+        at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:100)
+        at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:49)
+        at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:48)
+        at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+        at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+        at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+        at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+        at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+Caused by: org.apache.flink.runtime.client.JobExecutionException: Job execution failed.
+        at org.apache.flink.runtime.jobmaster.JobResult.toJobExecutionResult(JobResult.java:144)
+        at org.apache.flink.client.deployment.application.UnsuccessfulExecutionException.fromJobResult(UnsuccessfulExecutionException.java:60)
+        ... 56 more
+Caused by: org.apache.flink.runtime.JobException: Recovery is suppressed by NoRestartBackoffTimeStrategy
+        at org.apache.flink.runtime.executiongraph.failover.flip1.ExecutionFailureHandler.handleFailure(ExecutionFailureHandler.java:138)
+        at org.apache.flink.runtime.executiongraph.failover.flip1.ExecutionFailureHandler.getFailureHandlingResult(ExecutionFailureHandler.java:82)
+        at org.apache.flink.runtime.scheduler.DefaultScheduler.handleTaskFailure(DefaultScheduler.java:301)
+        at org.apache.flink.runtime.scheduler.DefaultScheduler.maybeHandleTaskFailure(DefaultScheduler.java:291)
+        at org.apache.flink.runtime.scheduler.DefaultScheduler.updateTaskExecutionStateInternal(DefaultScheduler.java:282)
+        at org.apache.flink.runtime.scheduler.SchedulerBase.updateTaskExecutionState(SchedulerBase.java:739)
+        at org.apache.flink.runtime.scheduler.SchedulerNG.updateTaskExecutionState(SchedulerNG.java:78)
+        at org.apache.flink.runtime.jobmaster.JobMaster.updateTaskExecutionState(JobMaster.java:443)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+        at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+        at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.lambda$handleRpcInvocation$1(AkkaRpcActor.java:304)
+        at org.apache.flink.runtime.concurrent.akka.ClassLoadingUtils.runWithContextClassLoader(ClassLoadingUtils.java:83)
+        at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleRpcInvocation(AkkaRpcActor.java:302)
+        at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleRpcMessage(AkkaRpcActor.java:217)
+        at org.apache.flink.runtime.rpc.akka.FencedAkkaRpcActor.handleRpcMessage(FencedAkkaRpcActor.java:78)
+        at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleMessage(AkkaRpcActor.java:163)
+        at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:24)
+        at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:20)
+        at scala.PartialFunction.applyOrElse(PartialFunction.scala:123)
+        at scala.PartialFunction.applyOrElse$(PartialFunction.scala:122)
+        at akka.japi.pf.UnitCaseStatement.applyOrElse(CaseStatements.scala:20)
+        at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:171)
+        at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:172)
+        at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:172)
+        at akka.actor.Actor.aroundReceive(Actor.scala:537)
+        at akka.actor.Actor.aroundReceive$(Actor.scala:535)
+        at akka.actor.AbstractActor.aroundReceive(AbstractActor.scala:220)
+        at akka.actor.ActorCell.receiveMessage(ActorCell.scala:580)
+        at akka.actor.ActorCell.invoke(ActorCell.scala:548)
+        at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270)
+        at akka.dispatch.Mailbox.run(Mailbox.scala:231)
+        at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
+        ... 5 more
+Caused by: java.util.ServiceConfigurationError: org.apache.beam.sdk.options.PipelineOptionsRegistrar: org.apache.beam.sdk.options.DefaultPipelineOptionsRegistrar not a subtype
+        at java.base/java.util.ServiceLoader.fail(Unknown Source)
+        at java.base/java.util.ServiceLoader$LazyClassPathLookupIterator.hasNextService(Unknown Source)
+        at java.base/java.util.ServiceLoader$LazyClassPathLookupIterator.hasNext(Unknown Source)
+        at java.base/java.util.ServiceLoader$2.hasNext(Unknown Source)
+        at java.base/java.util.ServiceLoader$3.hasNext(Unknown Source)
+        at org.apache.beam.vendor.guava.v26_0_jre.com.google.common.collect.ImmutableCollection$Builder.addAll(ImmutableCollection.java:415)
+        at org.apache.beam.vendor.guava.v26_0_jre.com.google.common.collect.ImmutableSet$Builder.addAll(ImmutableSet.java:507)
+        at org.apache.beam.vendor.guava.v26_0_jre.com.google.common.collect.ImmutableSortedSet$Builder.addAll(ImmutableSortedSet.java:528)
+        at org.apache.beam.sdk.util.common.ReflectHelpers.loadServicesOrdered(ReflectHelpers.java:199)
+        at org.apache.beam.sdk.options.PipelineOptionsFactory$Cache.initializeRegistry(PipelineOptionsFactory.java:1816)
+        at org.apache.beam.sdk.options.PipelineOptionsFactory$Cache.<init>(PipelineOptionsFactory.java:1810)
+        at org.apache.beam.sdk.options.PipelineOptionsFactory$Cache.<init>(PipelineOptionsFactory.java:1779)
+        at org.apache.beam.sdk.options.PipelineOptionsFactory.resetCache(PipelineOptionsFactory.java:543)
+        at org.apache.beam.sdk.options.PipelineOptionsFactory.<clinit>(PipelineOptionsFactory.java:509)
+        at org.apache.flink.streaming.api.runners.python.beam.BeamPythonFunctionRunner.open(BeamPythonFunctionRunner.java:223)
+        at org.apache.flink.streaming.api.operators.python.AbstractExternalPythonFunctionOperator.open(AbstractExternalPythonFunctionOperator.java:56)
+        at org.apache.flink.table.runtime.operators.python.AbstractStatelessFunctionOperator.open(AbstractStatelessFunctionOperator.java:92)
+        at org.apache.flink.table.runtime.operators.python.scalar.AbstractPythonScalarFunctionOperator.open(AbstractPythonScalarFunctionOperator.java:101)
+        at org.apache.flink.table.runtime.operators.python.scalar.PythonScalarFunctionOperator.open(PythonScalarFunctionOperator.java:71)
+        at org.apache.flink.streaming.runtime.tasks.RegularOperatorChain.initializeStateAndOpenOperators(RegularOperatorChain.java:107)
+        at org.apache.flink.streaming.runtime.tasks.StreamTask.restoreGates(StreamTask.java:700)
+        at org.apache.flink.streaming.runtime.tasks.StreamTaskActionExecutor$1.call(StreamTaskActionExecutor.java:55)
+        at org.apache.flink.streaming.runtime.tasks.StreamTask.restoreInternal(StreamTask.java:676)
+        at org.apache.flink.streaming.runtime.tasks.StreamTask.restore(StreamTask.java:643)
+        at org.apache.flink.runtime.taskmanager.Task.runWithSystemExitMonitoring(Task.java:948)
+        at org.apache.flink.runtime.taskmanager.Task.restoreAndInvoke(Task.java:917)
+        at org.apache.flink.runtime.taskmanager.Task.doRun(Task.java:741)
+        at org.apache.flink.runtime.taskmanager.Task.run(Task.java:563)
+        at java.base/java.lang.Thread.run(Unknown Source)
+2023-03-14 08:35:48,595 INFO  org.apache.flink.client.python.PythonDriver                  [] - --------------------------- Python Process Exited ---------------------------
+2023-03-14 08:35:48,596 ERROR org.apache.flink.client.python.PythonDriver                  [] - Run python process failed
+java.lang.RuntimeException: Python process exits with code: 1
+        at org.apache.flink.client.python.PythonDriver.main(PythonDriver.java:130) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+        at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+        at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+        at org.apache.flink.client.program.PackagedProgram.callMainMethod(PackagedProgram.java:355) ~[flink-clients-1.15.0.jar:1.15.0]
+        at org.apache.flink.client.program.PackagedProgram.invokeInteractiveModeForExecution(PackagedProgram.java:222) ~[flink-clients-1.15.0.jar:1.15.0]
+        at org.apache.flink.client.ClientUtils.executeProgram(ClientUtils.java:114) ~[flink-clients-1.15.0.jar:1.15.0]
+        at org.apache.flink.client.deployment.application.ApplicationDispatcherBootstrap.runApplicationEntryPoint(ApplicationDispatcherBootstrap.java:291) ~[flink-clients-1.15.0.jar:1.15.0]
+        at org.apache.flink.client.deployment.application.ApplicationDispatcherBootstrap.lambda$runApplicationAsync$2(ApplicationDispatcherBootstrap.java:244) ~[flink-clients-1.15.0.jar:1.15.0]
+        at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[?:?]
+        at java.util.concurrent.FutureTask.run(Unknown Source) ~[?:?]
+        at org.apache.flink.runtime.concurrent.akka.ActorSystemScheduledExecutorAdapter$ScheduledFutureTask.run(ActorSystemScheduledExecutorAdapter.java:171) ~[flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at org.apache.flink.runtime.concurrent.akka.ClassLoadingUtils.runWithContextClassLoader(ClassLoadingUtils.java:68) ~[flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at org.apache.flink.runtime.concurrent.akka.ClassLoadingUtils.lambda$withContextClassLoader$0(ClassLoadingUtils.java:41) ~[flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:49) [flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:48) [flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) [?:?]
+        at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source) [?:?]
+        at java.util.concurrent.ForkJoinPool.scan(Unknown Source) [?:?]
+        at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) [?:?]
+        at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) [?:?]
+2023-03-14 08:35:48,660 INFO  org.apache.flink.client.deployment.application.ApplicationDispatcherBootstrap [] - Application FAILED: 
+java.util.concurrent.CompletionException: org.apache.flink.client.deployment.application.ApplicationExecutionException: Could not execute application.
+        at java.util.concurrent.CompletableFuture.encodeThrowable(Unknown Source) ~[?:?]
+        at java.util.concurrent.CompletableFuture.completeThrowable(Unknown Source) ~[?:?]
+        at java.util.concurrent.CompletableFuture$UniCompose.tryFire(Unknown Source) ~[?:?]
+        at java.util.concurrent.CompletableFuture.postComplete(Unknown Source) ~[?:?]
+        at java.util.concurrent.CompletableFuture.completeExceptionally(Unknown Source) ~[?:?]
+        at org.apache.flink.client.deployment.application.ApplicationDispatcherBootstrap.runApplicationEntryPoint(ApplicationDispatcherBootstrap.java:323) ~[flink-clients-1.15.0.jar:1.15.0]
+        at org.apache.flink.client.deployment.application.ApplicationDispatcherBootstrap.lambda$runApplicationAsync$2(ApplicationDispatcherBootstrap.java:244) ~[flink-clients-1.15.0.jar:1.15.0]
+        at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[?:?]
+        at java.util.concurrent.FutureTask.run(Unknown Source) ~[?:?]
+        at org.apache.flink.runtime.concurrent.akka.ActorSystemScheduledExecutorAdapter$ScheduledFutureTask.run(ActorSystemScheduledExecutorAdapter.java:171) ~[flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at org.apache.flink.runtime.concurrent.akka.ClassLoadingUtils.runWithContextClassLoader(ClassLoadingUtils.java:68) ~[flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at org.apache.flink.runtime.concurrent.akka.ClassLoadingUtils.lambda$withContextClassLoader$0(ClassLoadingUtils.java:41) ~[flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:49) [flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:48) [flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) [?:?]
+        at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source) [?:?]
+        at java.util.concurrent.ForkJoinPool.scan(Unknown Source) [?:?]
+        at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) [?:?]
+        at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) [?:?]
+Caused by: org.apache.flink.client.deployment.application.ApplicationExecutionException: Could not execute application.
+        ... 14 more
+Caused by: org.apache.flink.client.program.ProgramInvocationException: The main method caused an error: org.apache.flink.table.api.TableException: Failed to wait job finish
+        at org.apache.flink.client.program.PackagedProgram.callMainMethod(PackagedProgram.java:372) ~[flink-clients-1.15.0.jar:1.15.0]
+        at org.apache.flink.client.program.PackagedProgram.invokeInteractiveModeForExecution(PackagedProgram.java:222) ~[flink-clients-1.15.0.jar:1.15.0]
+        at org.apache.flink.client.ClientUtils.executeProgram(ClientUtils.java:114) ~[flink-clients-1.15.0.jar:1.15.0]
+        at org.apache.flink.client.deployment.application.ApplicationDispatcherBootstrap.runApplicationEntryPoint(ApplicationDispatcherBootstrap.java:291) ~[flink-clients-1.15.0.jar:1.15.0]
+        ... 13 more
+Caused by: java.util.concurrent.ExecutionException: org.apache.flink.table.api.TableException: Failed to wait job finish
+        at java.util.concurrent.CompletableFuture.reportGet(Unknown Source) ~[?:?]
+        at java.util.concurrent.CompletableFuture.get(Unknown Source) ~[?:?]
+        at org.apache.flink.table.api.internal.TableResultImpl.awaitInternal(TableResultImpl.java:118) ~[flink-table-api-java-uber-1.15.0.jar:1.15.0]
+        at org.apache.flink.table.api.internal.TableResultImpl.await(TableResultImpl.java:81) ~[flink-table-api-java-uber-1.15.0.jar:1.15.0]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+        at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+        at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+        at org.apache.flink.api.python.shaded.py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.flink.api.python.shaded.py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.flink.api.python.shaded.py4j.Gateway.invoke(Gateway.java:282) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.flink.api.python.shaded.py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.flink.api.python.shaded.py4j.commands.CallCommand.execute(CallCommand.java:79) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.flink.api.python.shaded.py4j.GatewayConnection.run(GatewayConnection.java:238) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at java.lang.Thread.run(Unknown Source) ~[?:?]
+Caused by: org.apache.flink.table.api.TableException: Failed to wait job finish
+        at org.apache.flink.table.api.internal.InsertResultProvider.hasNext(InsertResultProvider.java:85) ~[flink-table-api-java-uber-1.15.0.jar:1.15.0]
+        at org.apache.flink.table.api.internal.InsertResultProvider.isFirstRowReady(InsertResultProvider.java:71) ~[flink-table-api-java-uber-1.15.0.jar:1.15.0]
+        at org.apache.flink.table.api.internal.TableResultImpl.lambda$awaitInternal$1(TableResultImpl.java:105) ~[flink-table-api-java-uber-1.15.0.jar:1.15.0]
+        at java.util.concurrent.CompletableFuture$AsyncRun.run(Unknown Source) ~[?:?]
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[?:?]
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[?:?]
+        at java.lang.Thread.run(Unknown Source) ~[?:?]
+Caused by: java.util.concurrent.ExecutionException: org.apache.flink.client.deployment.application.UnsuccessfulExecutionException: Application Status: FAILED
+        at java.util.concurrent.CompletableFuture.reportGet(Unknown Source) ~[?:?]
+        at java.util.concurrent.CompletableFuture.get(Unknown Source) ~[?:?]
+        at org.apache.flink.table.api.internal.InsertResultProvider.hasNext(InsertResultProvider.java:83) ~[flink-table-api-java-uber-1.15.0.jar:1.15.0]
+        at org.apache.flink.table.api.internal.InsertResultProvider.isFirstRowReady(InsertResultProvider.java:71) ~[flink-table-api-java-uber-1.15.0.jar:1.15.0]
+        at org.apache.flink.table.api.internal.TableResultImpl.lambda$awaitInternal$1(TableResultImpl.java:105) ~[flink-table-api-java-uber-1.15.0.jar:1.15.0]
+        at java.util.concurrent.CompletableFuture$AsyncRun.run(Unknown Source) ~[?:?]
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[?:?]
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[?:?]
+        at java.lang.Thread.run(Unknown Source) ~[?:?]
+Caused by: org.apache.flink.client.deployment.application.UnsuccessfulExecutionException: Application Status: FAILED
+        at org.apache.flink.client.deployment.application.UnsuccessfulExecutionException.fromJobResult(UnsuccessfulExecutionException.java:71) ~[flink-clients-1.15.0.jar:1.15.0]
+        at org.apache.flink.client.deployment.application.EmbeddedJobClient.lambda$getJobExecutionResult$2(EmbeddedJobClient.java:148) ~[flink-clients-1.15.0.jar:1.15.0]
+        at java.util.concurrent.CompletableFuture$UniApply.tryFire(Unknown Source) ~[?:?]
+        at java.util.concurrent.CompletableFuture.postComplete(Unknown Source) ~[?:?]
+        at java.util.concurrent.CompletableFuture.complete(Unknown Source) ~[?:?]
+        at org.apache.flink.client.deployment.application.JobStatusPollingUtils.lambda$null$2(JobStatusPollingUtils.java:101) ~[flink-clients-1.15.0.jar:1.15.0]
+        at java.util.concurrent.CompletableFuture.uniWhenComplete(Unknown Source) ~[?:?]
+        at java.util.concurrent.CompletableFuture.uniWhenCompleteStage(Unknown Source) ~[?:?]
+        at java.util.concurrent.CompletableFuture.whenComplete(Unknown Source) ~[?:?]
+        at org.apache.flink.client.deployment.application.JobStatusPollingUtils.lambda$pollJobResultAsync$4(JobStatusPollingUtils.java:96) ~[flink-clients-1.15.0.jar:1.15.0]
+        at java.util.concurrent.CompletableFuture.uniWhenComplete(Unknown Source) ~[?:?]
+        at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(Unknown Source) ~[?:?]
+        at java.util.concurrent.CompletableFuture.postComplete(Unknown Source) ~[?:?]
+        at java.util.concurrent.CompletableFuture.complete(Unknown Source) ~[?:?]
+        at org.apache.flink.runtime.rpc.akka.AkkaInvocationHandler.lambda$invokeRpc$1(AkkaInvocationHandler.java:259) ~[?:?]
+        at java.util.concurrent.CompletableFuture.uniWhenComplete(Unknown Source) ~[?:?]
+        at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(Unknown Source) ~[?:?]
+        at java.util.concurrent.CompletableFuture.postComplete(Unknown Source) ~[?:?]
+        at java.util.concurrent.CompletableFuture.complete(Unknown Source) ~[?:?]
+        at org.apache.flink.util.concurrent.FutureUtils.doForward(FutureUtils.java:1389) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.concurrent.akka.ClassLoadingUtils.lambda$null$1(ClassLoadingUtils.java:93) ~[flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at org.apache.flink.runtime.concurrent.akka.ClassLoadingUtils.runWithContextClassLoader(ClassLoadingUtils.java:68) ~[flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at org.apache.flink.runtime.concurrent.akka.ClassLoadingUtils.lambda$guardCompletionWithContextClassLoader$2(ClassLoadingUtils.java:92) ~[flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at java.util.concurrent.CompletableFuture.uniWhenComplete(Unknown Source) ~[?:?]
+        at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(Unknown Source) ~[?:?]
+        at java.util.concurrent.CompletableFuture.postComplete(Unknown Source) ~[?:?]
+        at java.util.concurrent.CompletableFuture.complete(Unknown Source) ~[?:?]
+        at org.apache.flink.runtime.concurrent.akka.AkkaFutureUtils$1.onComplete(AkkaFutureUtils.java:47) ~[?:?]
+        at akka.dispatch.OnComplete.internal(Future.scala:300) ~[?:?]
+        at akka.dispatch.OnComplete.internal(Future.scala:297) ~[?:?]
+        at akka.dispatch.japi$CallbackBridge.apply(Future.scala:224) ~[?:?]
+        at akka.dispatch.japi$CallbackBridge.apply(Future.scala:221) ~[?:?]
+        at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60) ~[flink-scala_2.12-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.concurrent.akka.AkkaFutureUtils$DirectExecutionContext.execute(AkkaFutureUtils.java:65) ~[?:?]
+        at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:68) ~[flink-scala_2.12-1.15.0.jar:1.15.0]
+        at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1(Promise.scala:284) ~[flink-scala_2.12-1.15.0.jar:1.15.0]
+        at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1$adapted(Promise.scala:284) ~[flink-scala_2.12-1.15.0.jar:1.15.0]
+        at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:284) ~[flink-scala_2.12-1.15.0.jar:1.15.0]
+        at akka.pattern.PromiseActorRef.$bang(AskSupport.scala:621) ~[?:?]
+        at akka.pattern.PipeToSupport$PipeableFuture$$anonfun$pipeTo$1.applyOrElse(PipeToSupport.scala:24) ~[?:?]
+        at akka.pattern.PipeToSupport$PipeableFuture$$anonfun$pipeTo$1.applyOrElse(PipeToSupport.scala:23) ~[?:?]
+        at scala.concurrent.Future.$anonfun$andThen$1(Future.scala:532) ~[flink-scala_2.12-1.15.0.jar:1.15.0]
+        at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29) ~[flink-scala_2.12-1.15.0.jar:1.15.0]
+        at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29) ~[flink-scala_2.12-1.15.0.jar:1.15.0]
+        at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60) ~[flink-scala_2.12-1.15.0.jar:1.15.0]
+        at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:63) ~[?:?]
+        at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:100) ~[?:?]
+        at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12) ~[flink-scala_2.12-1.15.0.jar:1.15.0]
+        at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:81) ~[flink-scala_2.12-1.15.0.jar:1.15.0]
+        at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:100) ~[?:?]
+        ... 7 more
+Caused by: org.apache.flink.runtime.client.JobExecutionException: Job execution failed.
+        at org.apache.flink.runtime.jobmaster.JobResult.toJobExecutionResult(JobResult.java:144) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.client.deployment.application.UnsuccessfulExecutionException.fromJobResult(UnsuccessfulExecutionException.java:60) ~[flink-clients-1.15.0.jar:1.15.0]
+        at org.apache.flink.client.deployment.application.EmbeddedJobClient.lambda$getJobExecutionResult$2(EmbeddedJobClient.java:148) ~[flink-clients-1.15.0.jar:1.15.0]
+        at java.util.concurrent.CompletableFuture$UniApply.tryFire(Unknown Source) ~[?:?]
+        at java.util.concurrent.CompletableFuture.postComplete(Unknown Source) ~[?:?]
+        at java.util.concurrent.CompletableFuture.complete(Unknown Source) ~[?:?]
+        at org.apache.flink.client.deployment.application.JobStatusPollingUtils.lambda$null$2(JobStatusPollingUtils.java:101) ~[flink-clients-1.15.0.jar:1.15.0]
+        at java.util.concurrent.CompletableFuture.uniWhenComplete(Unknown Source) ~[?:?]
+        at java.util.concurrent.CompletableFuture.uniWhenCompleteStage(Unknown Source) ~[?:?]
+        at java.util.concurrent.CompletableFuture.whenComplete(Unknown Source) ~[?:?]
+        at org.apache.flink.client.deployment.application.JobStatusPollingUtils.lambda$pollJobResultAsync$4(JobStatusPollingUtils.java:96) ~[flink-clients-1.15.0.jar:1.15.0]
+        at java.util.concurrent.CompletableFuture.uniWhenComplete(Unknown Source) ~[?:?]
+        at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(Unknown Source) ~[?:?]
+        at java.util.concurrent.CompletableFuture.postComplete(Unknown Source) ~[?:?]
+        at java.util.concurrent.CompletableFuture.complete(Unknown Source) ~[?:?]
+        at org.apache.flink.runtime.rpc.akka.AkkaInvocationHandler.lambda$invokeRpc$1(AkkaInvocationHandler.java:259) ~[?:?]
+        at java.util.concurrent.CompletableFuture.uniWhenComplete(Unknown Source) ~[?:?]
+        at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(Unknown Source) ~[?:?]
+        at java.util.concurrent.CompletableFuture.postComplete(Unknown Source) ~[?:?]
+        at java.util.concurrent.CompletableFuture.complete(Unknown Source) ~[?:?]
+        at org.apache.flink.util.concurrent.FutureUtils.doForward(FutureUtils.java:1389) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.concurrent.akka.ClassLoadingUtils.lambda$null$1(ClassLoadingUtils.java:93) ~[flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at org.apache.flink.runtime.concurrent.akka.ClassLoadingUtils.runWithContextClassLoader(ClassLoadingUtils.java:68) ~[flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at org.apache.flink.runtime.concurrent.akka.ClassLoadingUtils.lambda$guardCompletionWithContextClassLoader$2(ClassLoadingUtils.java:92) ~[flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at java.util.concurrent.CompletableFuture.uniWhenComplete(Unknown Source) ~[?:?]
+        at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(Unknown Source) ~[?:?]
+        at java.util.concurrent.CompletableFuture.postComplete(Unknown Source) ~[?:?]
+        at java.util.concurrent.CompletableFuture.complete(Unknown Source) ~[?:?]
+        at org.apache.flink.runtime.concurrent.akka.AkkaFutureUtils$1.onComplete(AkkaFutureUtils.java:47) ~[?:?]
+        at akka.dispatch.OnComplete.internal(Future.scala:300) ~[?:?]
+        at akka.dispatch.OnComplete.internal(Future.scala:297) ~[?:?]
+        at akka.dispatch.japi$CallbackBridge.apply(Future.scala:224) ~[?:?]
+        at akka.dispatch.japi$CallbackBridge.apply(Future.scala:221) ~[?:?]
+        at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60) ~[flink-scala_2.12-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.concurrent.akka.AkkaFutureUtils$DirectExecutionContext.execute(AkkaFutureUtils.java:65) ~[?:?]
+        at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:68) ~[flink-scala_2.12-1.15.0.jar:1.15.0]
+        at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1(Promise.scala:284) ~[flink-scala_2.12-1.15.0.jar:1.15.0]
+        at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1$adapted(Promise.scala:284) ~[flink-scala_2.12-1.15.0.jar:1.15.0]
+        at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:284) ~[flink-scala_2.12-1.15.0.jar:1.15.0]
+        at akka.pattern.PromiseActorRef.$bang(AskSupport.scala:621) ~[?:?]
+        at akka.pattern.PipeToSupport$PipeableFuture$$anonfun$pipeTo$1.applyOrElse(PipeToSupport.scala:24) ~[?:?]
+        at akka.pattern.PipeToSupport$PipeableFuture$$anonfun$pipeTo$1.applyOrElse(PipeToSupport.scala:23) ~[?:?]
+        at scala.concurrent.Future.$anonfun$andThen$1(Future.scala:532) ~[flink-scala_2.12-1.15.0.jar:1.15.0]
+        at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29) ~[flink-scala_2.12-1.15.0.jar:1.15.0]
+        at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29) ~[flink-scala_2.12-1.15.0.jar:1.15.0]
+        at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60) ~[flink-scala_2.12-1.15.0.jar:1.15.0]
+        at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:63) ~[?:?]
+        at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:100) ~[?:?]
+        at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12) ~[flink-scala_2.12-1.15.0.jar:1.15.0]
+        at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:81) ~[flink-scala_2.12-1.15.0.jar:1.15.0]
+        at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:100) ~[?:?]
+        ... 7 more
+Caused by: org.apache.flink.runtime.JobException: Recovery is suppressed by NoRestartBackoffTimeStrategy
+        at org.apache.flink.runtime.executiongraph.failover.flip1.ExecutionFailureHandler.handleFailure(ExecutionFailureHandler.java:138) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.executiongraph.failover.flip1.ExecutionFailureHandler.getFailureHandlingResult(ExecutionFailureHandler.java:82) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.scheduler.DefaultScheduler.handleTaskFailure(DefaultScheduler.java:301) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.scheduler.DefaultScheduler.maybeHandleTaskFailure(DefaultScheduler.java:291) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.scheduler.DefaultScheduler.updateTaskExecutionStateInternal(DefaultScheduler.java:282) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.scheduler.SchedulerBase.updateTaskExecutionState(SchedulerBase.java:739) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.scheduler.SchedulerNG.updateTaskExecutionState(SchedulerNG.java:78) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.jobmaster.JobMaster.updateTaskExecutionState(JobMaster.java:443) ~[flink-dist-1.15.0.jar:1.15.0]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+        at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+        at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+        at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.lambda$handleRpcInvocation$1(AkkaRpcActor.java:304) ~[?:?]
+        at org.apache.flink.runtime.concurrent.akka.ClassLoadingUtils.runWithContextClassLoader(ClassLoadingUtils.java:83) ~[flink-rpc-akka_b88ad155-f015-48cd-a342-4f270cbc8638.jar:1.15.0]
+        at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleRpcInvocation(AkkaRpcActor.java:302) ~[?:?]
+        at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleRpcMessage(AkkaRpcActor.java:217) ~[?:?]
+        at org.apache.flink.runtime.rpc.akka.FencedAkkaRpcActor.handleRpcMessage(FencedAkkaRpcActor.java:78) ~[?:?]
+        at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleMessage(AkkaRpcActor.java:163) ~[?:?]
+        at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:24) ~[?:?]
+        at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:20) ~[?:?]
+        at scala.PartialFunction.applyOrElse(PartialFunction.scala:123) ~[flink-scala_2.12-1.15.0.jar:1.15.0]
+        at scala.PartialFunction.applyOrElse$(PartialFunction.scala:122) ~[flink-scala_2.12-1.15.0.jar:1.15.0]
+        at akka.japi.pf.UnitCaseStatement.applyOrElse(CaseStatements.scala:20) ~[?:?]
+        at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:171) ~[flink-scala_2.12-1.15.0.jar:1.15.0]
+        at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:172) ~[flink-scala_2.12-1.15.0.jar:1.15.0]
+        at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:172) ~[flink-scala_2.12-1.15.0.jar:1.15.0]
+        at akka.actor.Actor.aroundReceive(Actor.scala:537) ~[?:?]
+        at akka.actor.Actor.aroundReceive$(Actor.scala:535) ~[?:?]
+        at akka.actor.AbstractActor.aroundReceive(AbstractActor.scala:220) ~[?:?]
+        at akka.actor.ActorCell.receiveMessage(ActorCell.scala:580) ~[?:?]
+        at akka.actor.ActorCell.invoke(ActorCell.scala:548) ~[?:?]
+        at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270) ~[?:?]
+        at akka.dispatch.Mailbox.run(Mailbox.scala:231) ~[?:?]
+        at akka.dispatch.Mailbox.exec(Mailbox.scala:243) ~[?:?]
+        ... 5 more
+Caused by: java.util.ServiceConfigurationError: org.apache.beam.sdk.options.PipelineOptionsRegistrar: org.apache.beam.sdk.options.DefaultPipelineOptionsRegistrar not a subtype
+        at java.util.ServiceLoader.fail(Unknown Source) ~[?:?]
+        at java.util.ServiceLoader$LazyClassPathLookupIterator.hasNextService(Unknown Source) ~[?:?]
+        at java.util.ServiceLoader$LazyClassPathLookupIterator.hasNext(Unknown Source) ~[?:?]
+        at java.util.ServiceLoader$2.hasNext(Unknown Source) ~[?:?]
+        at java.util.ServiceLoader$3.hasNext(Unknown Source) ~[?:?]
+        at org.apache.beam.vendor.guava.v26_0_jre.com.google.common.collect.ImmutableCollection$Builder.addAll(ImmutableCollection.java:415) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.beam.vendor.guava.v26_0_jre.com.google.common.collect.ImmutableSet$Builder.addAll(ImmutableSet.java:507) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.beam.vendor.guava.v26_0_jre.com.google.common.collect.ImmutableSortedSet$Builder.addAll(ImmutableSortedSet.java:528) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.beam.sdk.util.common.ReflectHelpers.loadServicesOrdered(ReflectHelpers.java:199) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.beam.sdk.options.PipelineOptionsFactory$Cache.initializeRegistry(PipelineOptionsFactory.java:1816) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.beam.sdk.options.PipelineOptionsFactory$Cache.<init>(PipelineOptionsFactory.java:1810) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.beam.sdk.options.PipelineOptionsFactory$Cache.<init>(PipelineOptionsFactory.java:1779) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.beam.sdk.options.PipelineOptionsFactory.resetCache(PipelineOptionsFactory.java:543) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.beam.sdk.options.PipelineOptionsFactory.<clinit>(PipelineOptionsFactory.java:509) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.flink.streaming.api.runners.python.beam.BeamPythonFunctionRunner.open(BeamPythonFunctionRunner.java:223) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.flink.streaming.api.operators.python.AbstractExternalPythonFunctionOperator.open(AbstractExternalPythonFunctionOperator.java:56) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.flink.table.runtime.operators.python.AbstractStatelessFunctionOperator.open(AbstractStatelessFunctionOperator.java:92) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.flink.table.runtime.operators.python.scalar.AbstractPythonScalarFunctionOperator.open(AbstractPythonScalarFunctionOperator.java:101) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.flink.table.runtime.operators.python.scalar.PythonScalarFunctionOperator.open(PythonScalarFunctionOperator.java:71) ~[flink-python_2.12-1.15.0.jar:1.15.0]
+        at org.apache.flink.streaming.runtime.tasks.RegularOperatorChain.initializeStateAndOpenOperators(RegularOperatorChain.java:107) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.streaming.runtime.tasks.StreamTask.restoreGates(StreamTask.java:700) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.streaming.runtime.tasks.StreamTaskActionExecutor$1.call(StreamTaskActionExecutor.java:55) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.streaming.runtime.tasks.StreamTask.restoreInternal(StreamTask.java:676) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.streaming.runtime.tasks.StreamTask.restore(StreamTask.java:643) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.taskmanager.Task.runWithSystemExitMonitoring(Task.java:948) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.taskmanager.Task.restoreAndInvoke(Task.java:917) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.taskmanager.Task.doRun(Task.java:741) ~[flink-dist-1.15.0.jar:1.15.0]
+        at org.apache.flink.runtime.taskmanager.Task.run(Task.java:563) ~[flink-dist-1.15.0.jar:1.15.0]
+        at java.lang.Thread.run(Unknown Source) ~[?:?]
+2023-03-14 08:36:18,912 INFO  org.apache.flink.runtime.resourcemanager.active.ActiveResourceManager [] - Stopping worker pyflink-flink-dome-taskmanager-1-1.
+2023-03-14 08:36:18,912 INFO  org.apache.flink.kubernetes.KubernetesResourceManagerDriver  [] - Stopping TaskManager pod pyflink-flink-dome-taskmanager-1-1.
+2023-03-14 08:36:18,913 INFO  org.apache.flink.runtime.resourcemanager.active.ActiveResourceManager [] - Closing TaskExecutor connection pyflink-flink-dome-taskmanager-1-1 because: TaskExecutor exceeded the idle timeout.
+2023-03-14 08:36:18,967 WARN  org.apache.flink.runtime.resourcemanager.active.ActiveResourceManager [] - Discard registration from TaskExecutor pyflink-flink-dome-taskmanager-1-1 at (akka.tcp://flink@172.20.1.164:6122/user/rpc/taskmanager_0) because the framework did not recognize it
